@@ -76,7 +76,7 @@ const Info = props => {
                 </InputGroup>
               </FormGroup>
               <FormGroup>
-                <Label for='email'>Почта</Label>
+                <Label for='email'>Почтовый адрес</Label>
                 <InputGroup className='input-group-no-border'>
                   <Input
                     id='email'
@@ -90,7 +90,7 @@ const Info = props => {
                 </InputGroup>
               </FormGroup>
               <FormGroup>
-                <Label for='password'>Пароль</Label>
+                <Label for='password'>Логин</Label>
                 <InputGroup className='input-group-no-border'>
                   <Input
                     id='password'
@@ -166,6 +166,7 @@ const Info = props => {
                 class='input-transparent pl-3 form-control'
                 onChange={changeField}
               >
+                <option value='none'></option>
                 <option value='school'>Школьник</option>
                 <option value='middle'>Среднее</option>
                 <option value='middleplus'>Среднее специальное</option>

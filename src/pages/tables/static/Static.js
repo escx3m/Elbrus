@@ -40,33 +40,33 @@ class Static extends React.Component {
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>Otto</td>
+                      <td>Достоевский</td>
+                      <td>Федор</td>
+                      <td>Михайлович</td>
                       <td><a href="#">sam@example.com</a></td>
                       <td><Badge color="gray" className="text-secondary" pill>Приглашенный</Badge></td>
                     </tr>
                     <tr>
                       <td>2</td>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>Thornton</td>
+                      <td>Раскольникв</td>
+                      <td>Родион</td>
+                      <td>Романович</td>
                       <td><a href="#">fat.thor@example.com</a></td>
                       <td><Badge color="gray" className="text-secondary" pill>Не подтвержденный</Badge></td>
                     </tr>
                     <tr>
                       <td>3</td>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>the Bird</td>
+                      <td>Мармеладова</td>
+                      <td>Соня</td>
+                      <td>Семеновна</td>
                       <td><a href="#">larry@example.com</a></td>
                       <td><Badge color="primary" className="text-secondary" pill>Новый</Badge></td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td>Peter</td>
-                      <td>Horadnia</td>
-                      <td>Horadnia</td>
+                      <td>Раскольникова</td>
+                      <td>Авдотья</td>
+                      <td>Романовна</td>
                       <td><a href="#">peter@example.com</a></td>
                       <td><Badge color="success" className="text-secondary" pill>Активный</Badge></td>
                     </tr>

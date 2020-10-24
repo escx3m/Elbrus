@@ -44,7 +44,7 @@ class NotificationsDemo extends React.Component {
           </span>
           <p className='m-0 overflow-hidden'>
             {/* eslint-disable */}
-            Пользователь <a href='#'>Алексей</a> приглашает вас в группу
+            <a href='#'>Алексей</a> приглашает вас на вебинар
             {/* eslint-enable */}
             &nbsp;&nbsp;
             <Button size='xs' color='success' className='mr-1'>
