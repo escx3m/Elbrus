@@ -10,6 +10,8 @@ import Login from '../login';
 import vkLogo from '../../images/social/vkLogo.png';
 import facebookLogo from '../../images/social/facebookLogo.png';
 import googleLogo from '../../images/social/googleLogo.png';
+import rsvLogo from '../../images/social/rsvLogo.png';
+import liderLogo from '../../images/social/liderLogo.png';
 import logoForm from '../../images/logoForm.png';
 
 class Register extends React.Component {
@@ -154,6 +156,8 @@ class Register extends React.Component {
                                     <img src={vkLogo} className="socialIcon" alt="logoVk" />
                                     <span className="socialMargin"><img src={facebookLogo} className="socialIcon" alt="logoFacebook" /></span>
                                     <img src={googleLogo} className="socialIcon" alt="logoGooglePlus" />
+                                    <span className="socialMargin"><img src={liderLogo} className="socialIcon" alt="liderLogo" /></span>
+                                    <img src={rsvLogo} className="socialIcon" alt="rsvLogo" />
                                 </div>
                             </div>
                         </form>
