@@ -11,15 +11,12 @@ import {
   InputGroupText,
   InputGroup,
   Input,
-  UncontrolledAlert,
   Dropdown,
   Collapse,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
   Badge,
-  ButtonGroup,
-  Button,
   Form,
   FormGroup,
 } from 'reactstrap';
@@ -248,16 +245,11 @@ class Header extends React.Component {
             </DropdownMenu>
           </Dropdown>
           <NavItem className={`${s.divider} text-white`} />
-
           <Dropdown
             nav
             isOpen={this.state.supportOpen}
             toggle={this.toggleSupportDropdown}
           >
-            <DropdownToggle nav className={`${s.navItem} text-white`}>
-              <i className='glyphicon glyphicon-globe' />
-              <span className={s.count}>8</span>
-            </DropdownToggle>
             <DropdownMenu right className={`${s.dropdownMenu} ${s.support}`}>
               <DropdownItem>
                 <Badge color='danger'>

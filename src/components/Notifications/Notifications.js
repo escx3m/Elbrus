@@ -49,9 +49,6 @@ class Notifications extends React.Component {
       case 2:
         notificationsTab = <MessagesDemo />;
         break;
-      case 3:
-        notificationsTab = <ProgressDemo />;
-        break;
       default:
         notificationsTab = <NotificationsDemo />;
         break;
@@ -71,7 +68,7 @@ class Notifications extends React.Component {
               onClick={() => this.changeNotificationsTab(1)}
               active={this.state.notificationsTabSelected === 1}
             >
-              Уведомления
+              События
             </Button>
             <Button
               outline
@@ -82,16 +79,6 @@ class Notifications extends React.Component {
               active={this.state.notificationsTabSelected === 2}
             >
               Сообщения
-            </Button>
-            <Button
-              outline
-              color='default'
-              size='sm'
-              className={s.notificationButton}
-              onClick={() => this.changeNotificationsTab(3)}
-              active={this.state.notificationsTabSelected === 3}
-            >
-              Баланс
             </Button>
           </ButtonGroup>
         </header>
@@ -117,7 +104,7 @@ class Notifications extends React.Component {
               <i className='la la-refresh' />
             )}
           </Button>
-          <span className='fs-mini'>Обновлено в 18:30 15 Октября 2020</span>
+          <span className='fs-mini'>Обновлено в 18:30 15.10.2020</span>
         </footer>
       </section>
     );
