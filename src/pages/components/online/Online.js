@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   TabContent,
   TabPane,
@@ -17,115 +17,62 @@ import data from '../../../data.json';
 import s from './Icons.module.scss';
 import { COURSES_BASE_URL } from '../../../config';
 
-class Online extends React.Component {
-  constructor(props) {
-    super(props);
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      eventType: 'online',
-      options: {
-        position: 'top-right',
-        autoClose: 5000,
-        closeOnClick: false,
-        pauseOnHover: false,
-        draggable: true,
-      },
-      activeTab: '1',
-      tabs: [
-        {
-          id: 1,
-          name: 'Деловые игры',
-          meetups: [
-            {
-              date: 1231231231231,
-              link: 'dfasdfasdf',
-              name: '12313213123',
-            },
-          ],
-        },
-        {
-          id: 2,
-          name: 'Программирование',
-          meetups: [],
-        },
-        {
-          id: 3,
-          name: 'Дизайн',
-          meetups: [],
-        },
-        {
-          id: 4,
-          name: 'Финансы',
-          meetups: [],
-        },
-        {
-          id: 5,
-          name: 'Мотивация',
-          meetups: [],
-        },
-        {
-          id: 6,
-          name: 'Маркетинг',
-          meetups: [],
-        },
-        {
-          id: 7,
-          name: 'SMM',
-          meetups: [],
-        },
-        {
-          id: 8,
-          name: 'Аналитика',
-          meetups: [],
-        },
-      ],
-    };
-  }
+const Online = () => {
+  const [state, setState] = useState({
+    page: 'online',
+    options: {
+      position: 'top-right',
+      autoClose: 5000,
+      closeOnClick: false,
+      pauseOnHover: false,
+      draggable: true,
+    },
+    tabs: [],
+    activeTab: '1',
+  });
 
-  componentDidMount() {
-    this.setState({});
-  }
+  useEffect(() => {
+    // if (state.tabs.length === 0) {
+    const tabs = data.pages[state.page].tabs;
+    setState({ ...state, tabs });
+    // }
+  }, []);
 
-  toggle(tab) {
-    if (this.state.activeTab !== tab) {
-      this.setState({
-        activeTab: tab,
-      });
+  const toggle = tab => {
+    if (state.activeTab !== tab) {
+      setState({ ...state, activeTab: tab });
     }
-  }
+  };
 
-  createRefLink(userFromId, eventId) {
-    const refLink = `${COURSES_BASE_URL}/?fromUser=${userFromId}&eventId=${eventId}`;
-    this.setState({ refLink });
-  }
+  return (
+    <section className={`${s.root} mb-4`}>
+      <h1 className='page-title'>Онлайн мероприятия</h1>
 
-  render() {
-    return (
-      <section className={`${s.root} mb-4`}>
-        <h1 className='page-title'>Онлайн мероприятия</h1>
+      <Nav className='bg-transparent' tabs>
+        {state.tabs.map(tab => (
+          <NavItem key={`${state.page}- ${tab.id}`}>
+            <NavLink
+              className={classnames({
+                active: state.activeTab === `${tab.id}`,
+              })}
+              onClick={() => {
+                toggle(`${tab.id}`);
+              }}
+            >
+              <span className='mr-xs'>{tab.name}</span>
+              <Badge color='primary'>{tab.id === '1' ? 'new' : ''}</Badge>
+            </NavLink>
+          </NavItem>
+        ))}
+      </Nav>
 
-        <Nav className='bg-transparent' tabs>
-          {this.state.tabs.map(tab => (
-            <NavItem>
-              <NavLink
-                className={classnames({
-                  active: this.state.activeTab === `${tab.id}`,
-                })}
-                onClick={() => {
-                  this.toggle(`${tab.id}`);
-                }}
-              >
-                <span className='mr-xs'>{tab.name}</span>
-                <Badge color='primary'>{tab.id === '1' ? 'new' : ''}</Badge>
-              </NavLink>
-            </NavItem>
-          ))}
-        </Nav>
+      <TabContent activeTab={state.activeTab}>
+        {state.tabs.map(tab => {
+          const tabMeetups = tab.meetups;
 
-        <TabContent activeTab={this.state.activeTab}>
-          {this.state.tabs.map(tab => (
-            <TabPane tabId={tab.id}>
-              <Row className='icon-list' id={this.state.activeTab}>
+          return (
+            <TabPane tabId={tab.id} key={`tab-pane-${tab.id}`}>
+              <Row className='icon-list' key={`${tab.id}-header`}>
                 <Col md={2} lg={2} xs={12} className='list-item'>
                   Дата
                 </Col>
@@ -146,12 +93,17 @@ class Online extends React.Component {
                 </Col>
               </Row>
 
-              {tab.meetups.map(meetup => {
-                const meetupDate = new Date(meetup.date).toString();
+              {tabMeetups.map(meetup => {
+                console.log('tab = ', tab);
+                console.log('meetup ', meetup);
 
+                const meetupDate = new Date(meetup.startDate).toString();
                 const meetupLink = meetup.link;
                 return (
-                  <Row className='icon-list' id={`${tab.id}-${meetup.id}`}>
+                  <Row
+                    className='icon-list'
+                    key={`meetup${tab.id}-${meetup.id}`}
+                  >
                     <Col md={2} lg={2} xs={12} className='list-item'>
                       {meetupDate}
                     </Col>
@@ -162,8 +114,9 @@ class Online extends React.Component {
                       <a
                         href='https://rsv.ru/edu/courses/10/185/'
                         target='_blank'
+                        rel='noopener noreferrer'
                       >
-                        {meetup.name}
+                        {meetup.title}
                       </a>
                     </Col>
                     <Col md={2} lg={2} xs={12} className='list-item'>
@@ -173,7 +126,7 @@ class Online extends React.Component {
                       <CopyToClipboard
                         text={`${COURSES_BASE_URL}/${1}/${334}`}
                         onCopy={text => {
-                          this.setState({ refLink: text, copied: true });
+                          setState({ ...state, refLink: text, copied: true });
                           toast.success('Ссылка скопирована в буфер обмена', {
                             position: 'bottom-right',
                             autoClose: 5000,
@@ -183,23 +136,23 @@ class Online extends React.Component {
                           });
                         }}
                       >
-                        <button class='mr-1 btn btn-success btn-xs'>
+                        <button className='mr-1 btn btn-success btn-xs'>
                           Создать
                         </button>
                       </CopyToClipboard>
                     </Col>
                     <Col md={3} lg={3} xs={12} className='list-item'>
-                      {this.refLink}
+                      {state.refLink}
                     </Col>
                   </Row>
                 );
               })}
             </TabPane>
-          ))}
-        </TabContent>
-      </section>
-    );
-  }
-}
+          );
+        })}
+      </TabContent>
+    </section>
+  );
+};
 
 export default Online;
