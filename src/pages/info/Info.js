@@ -178,22 +178,12 @@ const Info = props => {
                 class='input-transparent pl-3 form-control'
                 onChange={changeField}
               >
-<<<<<<< HEAD
                 <option value='1'>Школьник</option>
                 <option value='2'>Среднее</option>
                 <option value='3'>Среднее специальное</option>
                 <option value='4'>Высшее</option>
                 <option value='5'>Аспирантура</option>
                 <option value='6'>Ученая степень</option>
-=======
-                <option value='none'></option>
-                <option value='school'>Школьник</option>
-                <option value='middle'>Среднее</option>
-                <option value='middleplus'>Среднее специальное</option>
-                <option value='graduate'>Высшее</option>
-                <option value='postgraduate'>Аспирантура</option>
-                <option value='doctoral'>Ученая степень</option>
->>>>>>> cd0e71d25207d54a0cf62557955feece2111251d
               </select>
             </FormGroup>
             <FormGroup>
