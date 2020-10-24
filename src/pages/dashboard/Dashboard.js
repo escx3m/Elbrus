@@ -161,8 +161,8 @@ class Dashboard extends React.Component {
                   <p className='value'>Офлайн</p>
                 </div>
                 <div className='stat-item'>
-                  <h6 className='name'>Формат</h6>
-                  <p className='value'>Офлайн</p>
+                  <h6 className='name'>Название</h6>
+                  <p className='value'>Финансовая грамотность</p>
                 </div>
               </div>
             </Widget>
@@ -183,8 +183,8 @@ class Dashboard extends React.Component {
                   <p className='value'>Офлайн</p>
                 </div>
                 <div className='stat-item'>
-                  <h6 className='name'>Формат</h6>
-                  <p className='value'>Офлайн</p>
+                  <h6 className='name'>Название</h6>
+                  <p className='value'>Лидерство</p>
                 </div>
               </div>
             </Widget>
@@ -232,9 +232,10 @@ class Dashboard extends React.Component {
                       <i className='status status-bottom bg-success' />
                     </span>
                     <div>
-                      <h6 className='m-0'>Chris Gray</h6>
+                      <h6 className='m-0'>Админ</h6>
                       <p className='help-block text-ellipsis m-0'>
-                        Hey! What&apos;s up? So many times since we
+                        Добрый день! Пожалуйста, подтвердите свое участие в
+                        вебинаре.
                       </p>
                     </div>
                   </button>
@@ -248,9 +249,9 @@ class Dashboard extends React.Component {
                       <i className='status status-bottom bg-success' />
                     </span>
                     <div>
-                      <h6 className='m-0'>Jamey Brownlow</h6>
+                      <h6 className='m-0'>Василий Егоров</h6>
                       <p className='help-block text-ellipsis m-0'>
-                        Good news coming tonight. Seems they agreed to proceed
+                        Здравствуйте, хочу с вами посоветоваться
                       </p>
                     </div>
                   </button>
@@ -264,9 +265,9 @@ class Dashboard extends React.Component {
                       <i className='status status-bottom bg-default' />
                     </span>
                     <div>
-                      <h6 className='m-0'>Livia Walsh</h6>
+                      <h6 className='m-0'>Анна Захарова</h6>
                       <p className='help-block text-ellipsis m-0'>
-                        Check my latest email plz!
+                        Приходи на встречу завтра к 13:30!
                       </p>
                     </div>
                   </button>
@@ -280,9 +281,9 @@ class Dashboard extends React.Component {
                       <i className='status status-bottom bg-danger' />
                     </span>
                     <div>
-                      <h6 className='m-0'>Jaron Fitzroy</h6>
+                      <h6 className='m-0'>Артур Новиков</h6>
                       <p className='help-block text-ellipsis m-0'>
-                        What about summer break?
+                        Привет, как твои успехи?
                       </p>
                     </div>
                   </button>
@@ -302,84 +303,42 @@ class Dashboard extends React.Component {
             <Widget
               title={
                 <h6>
-                  {' '}
-                  Market <span className='fw-semi-bold'>Stats</span>
+                  <span className='fw-semi-bold'>История операций</span>
                 </h6>
               }
               close
             >
               <div className='widget-body'>
-                <h3>$720 Earned</h3>
+                <h3>Баланс: 5232 Э</h3>
                 <p className='fs-mini text-muted mb mt-sm'>
-                  Target <span className='fw-semi-bold'>$820</span> day earnings
-                  is <span className='fw-semi-bold'>96%</span> reached.
+                  Эльбрусы можно потратить для покупки скидок у наших{' '}
+                  <span className='fw-semi-bold'>
+                    <a href='http://leadersofdigital.ru'> партнеров</a>
+                  </span>
                 </p>
               </div>
               <div className={`widget-table-overflow ${s.table}`}>
                 <Table striped size='sm'>
                   <thead className='no-bd'>
                     <tr>
-                      <th>
-                        <div className='checkbox abc-checkbox'>
-                          <Input
-                            className='mt-0'
-                            id='checkbox210'
-                            type='checkbox'
-                            onClick={() => this.checkTable(0)}
-                            checked={this.state.checkedArr[0]}
-                            readOnly
-                          />{' '}
-                          <Label for='checkbox210' />
-                        </div>
-                      </th>
-                      <th>&nbsp;</th>
-                      <th>&nbsp;</th>
+                      <th>Дата</th>
+                      <th>Поступление</th>
+                      <th>Списание</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>
-                        <div className='checkbox abc-checkbox'>
-                          <Input
-                            className='mt-0'
-                            id='checkbox212'
-                            type='checkbox'
-                            onClick={() => this.checkTable(1)}
-                            checked={this.state.checkedArr[1]}
-                            readOnly
-                          />{' '}
-                          <Label for='checkbox212' />
-                        </div>
-                      </td>
-                      <td>HP Core i7</td>
-                      <td className='text-align-right fw-semi-bold'>$346.1</td>
+                      <td>12:33 23 Октября 2020</td>
+                      <td className='text-align-right fw-semi-bold'>460 Э</td>
+                      <td className='text-align-right fw-semi-bold'>0 Э</td>
                     </tr>
                     <tr>
-                      <td>
-                        <div className='checkbox abc-checkbox'>
-                          <Input
-                            className='mt-0'
-                            id='checkbox214'
-                            onClick={() => this.checkTable(2)}
-                            type='checkbox'
-                            checked={this.state.checkedArr[2]}
-                            readOnly
-                          />{' '}
-                          <Label for='checkbox214' />
-                        </div>
-                      </td>
-                      <td>Air Pro</td>
-                      <td className='text-align-right fw-semi-bold'>$533.1</td>
+                      <td>11:14 30 Октября 2020</td>
+                      <td className='text-align-right fw-semi-bold'>0 Э</td>
+                      <td className='text-align-right fw-semi-bold'>34 Э</td>
                     </tr>
                   </tbody>
                 </Table>
-              </div>
-
-              <div
-                className='widget-body mt-xlg chart-overflow-bottom'
-                style={{ height: '100px' }}
-              >
-                <Rickshaw height={100} />
               </div>
             </Widget>
           </Col>

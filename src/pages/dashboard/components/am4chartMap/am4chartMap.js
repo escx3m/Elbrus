@@ -82,7 +82,7 @@ class Am4chartMap extends Component {
     return (
       <div className={s.mapChart}>
         <div className={s.stats}>
-          <h6 className='mt-1'>GEO-LOCATIONS</h6>
+          <h6 className='mt-1'>КАРТА</h6>
           <p className='h3 m-0'>
             <span className='mr-xs fw-normal'>
               <AnimateNumber
