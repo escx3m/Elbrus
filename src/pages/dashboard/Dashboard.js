@@ -190,19 +190,23 @@ class Dashboard extends React.Component {
             </Widget>
           </Col>
           <Col lg={4} xs={12}>
-            <Widget title={<h6> RANDOM VALUES </h6>} close settings>
+            <Widget title={<h6> Следующиее событие </h6>} close settings>
               <div className='stats-row'>
                 <div className='stat-item'>
-                  <h6 className='name fs-sm'>Overcome T.</h6>
-                  <p className='value'>104.85%</p>
+                  <h6 className='name'>Дата</h6>
+                  <p className='value'>30 Октября 2020</p>
                 </div>
                 <div className='stat-item'>
-                  <h6 className='name fs-sm'>Takeoff Angle</h6>
-                  <p className='value'>14.29&deg;</p>
+                  <h6 className='name'>Время</h6>
+                  <p className='value'>10:38</p>
                 </div>
                 <div className='stat-item'>
-                  <h6 className='name fs-sm'>World Pop.</h6>
-                  <p className='value'>7,211M</p>
+                  <h6 className='name'>Формат</h6>
+                  <p className='value'>Офлайн</p>
+                </div>
+                <div className='stat-item'>
+                  <h6 className='name'>Название</h6>
+                  <p className='value'>Лидерство</p>
                 </div>
               </div>
             </Widget>
@@ -293,7 +297,7 @@ class Dashboard extends React.Component {
                 <input
                   type='search'
                   className='form-control form-control-sm bg-custom-dark border-0'
-                  placeholder='Search'
+                  placeholder='Найти'
                 />
               </footer>
             </Widget>
