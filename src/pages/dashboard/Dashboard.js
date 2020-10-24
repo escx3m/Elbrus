@@ -142,7 +142,7 @@ class Dashboard extends React.Component {
 
         <Row>
           <Col lg={4} xs={12}>
-            <Widget title={<h6> Предыдущее событие </h6>} close settings>
+            <Widget title={<h6> Запланированное событие </h6>} close settings>
               <div className='stats-row'>
                 <div className='stat-item'>
                   <h6 className='name'>Дата</h6>
@@ -309,11 +309,11 @@ class Dashboard extends React.Component {
               close
             >
               <div className='widget-body'>
-                <h3>Баланс: 5232 Э</h3>
+                <h3>Баланс: 5232 Эльбрус коинов</h3>
                 <p className='fs-mini text-muted mb mt-sm'>
                   Эльбрусы можно потратить для покупки скидок у наших{' '}
                   <span className='fw-semi-bold'>
-                    <a href='http://leadersofdigital.ru'> партнеров</a>
+                    <a href='http://leadersofdigital.ru' target="_blank"> партнеров</a>
                   </span>
                 </p>
               </div>

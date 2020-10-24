@@ -158,7 +158,7 @@ class Charts extends React.Component {
                 </Col>
                 <Col lg={6} xs={12}>
                   <Widget
-                    title={<h5>Заполнение анкеты <span className="fw-semi-bold">участника</span></h5>}
+                    title={<h5>Заполнение анкеты участника</h5>}
                     close collapse
                   >
                     <ReactEchartsCore
@@ -171,7 +171,7 @@ class Charts extends React.Component {
                 </Col>
                 <Col lg={12} xs={12}>
                   <Widget
-                    title={<h5>Количество <span className="fw-semi-bold">новых заявок</span></h5>}
+                    title={<h5>Количество новых заявок</h5>}
                     close collapse
                   >
                     <HighchartsReact options={ld} />

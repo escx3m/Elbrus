@@ -27,7 +27,7 @@ class BreadcrumbHistory extends Component {
         { this.props.url !== '/app/chat' ?
           <div>
             <Breadcrumb tag="nav" listTag="div">
-              <BreadcrumbItem>Вы тут</BreadcrumbItem>
+              <BreadcrumbItem>GO!</BreadcrumbItem>
               {this.renderBreadCrumbs()}
             </Breadcrumb>
           </div>
