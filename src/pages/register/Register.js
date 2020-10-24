@@ -66,6 +66,7 @@ class Register extends React.Component {
     }
 
     doRegister(e) {
+        console.log(e)
         e.preventDefault();
         if (!this.isPasswordValid()) {
             this.checkPassword();
@@ -151,7 +152,7 @@ class Register extends React.Component {
                                 <p className="widget-auth-info mt-4">
                                     Есть аккаунт? Авторизуйся!
                                 </p>
-                                <Link className="d-block text-center mb-4" to="login">Войти в систему</Link>
+                            <Button type="submit" className="d-block text-center mb-4"value="Войти в систему"/>
                                 <div className="blockLink">
                                     <img src={vkLogo} className="socialIcon" alt="logoVk" />
                                     <span className="socialMargin"><img src={facebookLogo} className="socialIcon" alt="logoFacebook" /></span>

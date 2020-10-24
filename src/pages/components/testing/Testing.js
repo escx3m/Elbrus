@@ -104,18 +104,18 @@ class Testing extends React.Component {
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
               </Row>
             </div>
@@ -133,18 +133,18 @@ class Testing extends React.Component {
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
               </Row>
             </div>
@@ -162,18 +162,18 @@ class Testing extends React.Component {
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
               </Row>
             </div>
@@ -191,18 +191,18 @@ class Testing extends React.Component {
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
               </Row>
             </div>
@@ -220,18 +220,18 @@ class Testing extends React.Component {
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
               </Row>
             </div>
@@ -249,18 +249,18 @@ class Testing extends React.Component {
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
               </Row>
             </div>
@@ -278,18 +278,18 @@ class Testing extends React.Component {
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
                 <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
                 <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="_blank">Уроки лидерства</a></Col>
-                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="_blank">Пройти тестирование</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334?mView=detail" target="blank">Уроки лидерства</a></Col>
+                <Col md={4} lg={3} xs={12} className="list-item"><a href="https://rsv.ru/portal/edu/courses/1/334" target="blank">Пройти тестирование</a></Col>
 
               </Row>
             </div>

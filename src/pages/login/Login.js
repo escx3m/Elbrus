@@ -13,6 +13,8 @@ import rsvLogo from '../../images/social/rsvLogo.png';
 import liderLogo from '../../images/social/liderLogo.png';
 import logoForm from '../../images/logoForm.png';
 
+import data from '../../data.json'
+
 class Login extends React.Component {
     static propTypes = {
         dispatch: PropTypes.func.isRequired,
@@ -46,7 +48,10 @@ class Login extends React.Component {
 
     doLogin(e) {
         e.preventDefault();
-        this.props.dispatch(loginUser({ email: this.state.email, password: this.state.password }));
+        console.log(data.users)
+        let res = data.users.find(item => item.email == this.state.email && item.password == this.state.password)
+        
+        if(res) this.props.dispatch(loginUser({ email: this.state.email, password: this.state.password}));
     }
 
     signUp() {

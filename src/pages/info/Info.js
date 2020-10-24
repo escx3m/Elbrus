@@ -3,10 +3,13 @@ import axios from 'axios';
 import { Row, Col } from 'reactstrap';
 import { Alert, Button, FormGroup, Label, InputGroup, Input } from 'reactstrap';
 import Widget from '../../components/Widget';
+import data from '../../data.json'
+
+
 
 const Info = props => {
   const [user, setUser] = useState({});
-
+  console.log(props)
   const changeField = e => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
@@ -14,8 +17,13 @@ const Info = props => {
     // axios.get();
   }, []);
 
-  useEffect(() => {
-    console.log('user ', user);
+  useEffect(() => {   
+    let res = data.users.find(item => item.email == localStorage.getItem('ElbrusEmail'))    
+    setUser(res)
+    document.getElementById("gender").value = res.genders
+    document.getElementById("education").value = res.statusStudy
+    
+    console.log(data.users[user.id-1])
   }, [user]);
 
   return (
@@ -26,7 +34,11 @@ const Info = props => {
           <Widget title={<h5>Личная информация</h5>} close collapse>
             <form
               onSubmit={() => {
-                console.log('submit form');
+               
+                console.log(data.users[user.id-1])
+                data.users[user.id-1].surname = 'остоевский'
+               
+                
               }}
             >
               {props.errorMessage && (
@@ -69,7 +81,7 @@ const Info = props => {
                   <Input
                     id='patronimyc'
                     className='input-transparent pl-3'
-                    value={user.patronimyc}
+                    value={user.patronymic}
                     onChange={changeField}
                     name='patronimyc'
                   />
@@ -166,12 +178,12 @@ const Info = props => {
                 class='input-transparent pl-3 form-control'
                 onChange={changeField}
               >
-                <option value='school'>Школьник</option>
-                <option value='middle'>Среднее</option>
-                <option value='middleplus'>Среднее специальное</option>
-                <option value='graduate'>Высшее</option>
-                <option value='postgraduate'>Аспирантура</option>
-                <option value='doctoral'>Ученая степень</option>
+                <option value='1'>Школьник</option>
+                <option value='2'>Среднее</option>
+                <option value='3'>Среднее специальное</option>
+                <option value='4'>Высшее</option>
+                <option value='5'>Аспирантура</option>
+                <option value='6'>Ученая степень</option>
               </select>
             </FormGroup>
             <FormGroup>
