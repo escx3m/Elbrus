@@ -29,6 +29,7 @@ import {
   changeSidebarVisibility,
 } from '../../actions/navigation';
 
+import data from '../../data.json';
 import sender1 from '../../images/1.png';
 import sender2 from '../../images/2.png';
 import sender3 from '../../images/3.png';
@@ -64,7 +65,36 @@ class Header extends React.Component {
       searchFocused: false,
       searchOpen: false,
       notificationsOpen: false,
+      user: {
+        id: '',
+        birthday: '',
+        location: '',
+        email: '',
+        password: '',
+        genders: '',
+        events: '',
+        organization: '',
+        link: {
+          vk: '',
+          instagram: '',
+        },
+        phone: '',
+        telegram: '',
+        surname: '',
+        name: '',
+        patronymic: '',
+        scores: '',
+        statusStudy: '',
+      },
     };
+  }
+
+  componentDidMount() {
+    let res = data.users.find(
+      item => item.email == localStorage.getItem('ElbrusEmail')
+    );
+
+    this.setState({ user: res });
   }
 
   toggleNotifications = () => {
@@ -183,7 +213,9 @@ class Header extends React.Component {
               >
                 <img src={avatar} alt='...' />
               </span>
-              <span className={`small ${s.accountCheck}`}>Андрей Андреев</span>
+              <span
+                className={`small ${s.accountCheck}`}
+              >{`${this.state.user.name} ${this.state.user.surname}`}</span>
               <Badge className={s.badge} color='primary'>
                 13
               </Badge>

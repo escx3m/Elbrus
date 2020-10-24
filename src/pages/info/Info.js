@@ -1,29 +1,43 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { Row, Col } from 'reactstrap';
 import { Alert, Button, FormGroup, Label, InputGroup, Input } from 'reactstrap';
 import Widget from '../../components/Widget';
-import data from '../../data.json'
-
-
+import data from '../../data.json';
 
 const Info = props => {
-  const [user, setUser] = useState({});
-  console.log(props)
+  const [user, setUser] = useState({
+    id: '',
+    birthday: '',
+    location: '',
+    email: '',
+    password: '',
+    genders: '',
+    events: '',
+    organization: '',
+    link: {
+      vk: '',
+      instagram: '',
+    },
+    phone: '',
+    telegram: '',
+    surname: '',
+    name: '',
+    patronymic: '',
+    scores: '',
+    statusStudy: '',
+  });
+
   const changeField = e => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
-  useEffect(() => {
-    // axios.get();
-  }, []);
 
   useEffect(() => {
-    let res = data.users.find(item => item.email == localStorage.getItem('ElbrusEmail'))
-    setUser(res)
-    document.getElementById("gender").value = res.genders
-    document.getElementById("education").value = res.statusStudy
-
-    console.log(data.users[user.id - 1])
+    let res = data.users.find(
+      item => item.email == localStorage.getItem('ElbrusEmail')
+    );
+    setUser(res);
+    document.getElementById('gender').value = res && res.genders;
+    document.getElementById('education').value = res && res.statusStudy;
   }, [user]);
 
   return (
@@ -34,11 +48,8 @@ const Info = props => {
           <Widget title={<h5>Личная информация</h5>} close collapse>
             <form
               onSubmit={() => {
-
-                console.log(data.users[user.id - 1])
-                data.users[user.id - 1].surname = 'остоевский'
-
-
+                console.log(data.users[user.id - 1]);
+                data.users[user.id - 1].surname = 'остоевский';
               }}
             >
               {props.errorMessage && (
@@ -255,7 +266,6 @@ const Info = props => {
               </InputGroup>
             </FormGroup>
           </Widget>
-
         </Col>
       </Row>
     </div>
