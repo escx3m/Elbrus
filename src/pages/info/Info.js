@@ -17,13 +17,13 @@ const Info = props => {
     // axios.get();
   }, []);
 
-  useEffect(() => {   
-    let res = data.users.find(item => item.email == localStorage.getItem('ElbrusEmail'))    
+  useEffect(() => {
+    let res = data.users.find(item => item.email == localStorage.getItem('ElbrusEmail'))
     setUser(res)
     document.getElementById("gender").value = res.genders
     document.getElementById("education").value = res.statusStudy
-    
-    console.log(data.users[user.id-1])
+
+    console.log(data.users[user.id - 1])
   }, [user]);
 
   return (
@@ -34,11 +34,11 @@ const Info = props => {
           <Widget title={<h5>Личная информация</h5>} close collapse>
             <form
               onSubmit={() => {
-               
-                console.log(data.users[user.id-1])
-                data.users[user.id-1].surname = 'остоевский'
-               
-                
+
+                console.log(data.users[user.id - 1])
+                data.users[user.id - 1].surname = 'остоевский'
+
+
               }}
             >
               {props.errorMessage && (
@@ -199,6 +199,50 @@ const Info = props => {
               </InputGroup>
             </FormGroup>
           </Widget>
+
+          <Widget title={<h5>Социальные сети</h5>} close collapse>
+            <FormGroup>
+              <Label for='linkVK'>Вконтакте</Label>
+              <InputGroup className='input-group-no-border'>
+                <Input
+                  id='linkVK'
+                  className='input-transparent pl-3'
+                  value={user.link && user.link.vk}
+                  onChange={changeField}
+                  name='linkVK'
+                />
+              </InputGroup>
+            </FormGroup>
+
+            <FormGroup>
+              <Label for='linkInstagram'></Label>
+              <InputGroup className='input-group-no-border'>
+                <Input
+                  id='linkInstagram'
+                  className='input-transparent pl-3'
+                  value={user.link && user.link.instagram}
+                  onChange={changeField}
+                  name='linkInstagram'
+                />
+              </InputGroup>
+            </FormGroup>
+          </Widget>
+
+          <Widget title={<h5>Прочее</h5>} close collapse>
+            <FormGroup>
+              <Label for='scores'>Эльбрус Коины</Label>
+              <InputGroup className='input-group-no-border'>
+                <Input
+                  id='scores'
+                  className='input-transparent pl-3'
+                  value={user.scores}
+                  onChange={changeField}
+                  name='scores'
+                />
+              </InputGroup>
+            </FormGroup>
+          </Widget>
+
         </Col>
       </Row>
     </div>
