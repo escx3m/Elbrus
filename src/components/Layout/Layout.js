@@ -12,6 +12,7 @@ import OfflineEvent from '../../pages/components/offline/offline';
 import Testing from '../../pages/components/testing';
 import CoreWebinar from '../../pages/webinar';
 import CoreInfo from '../../pages/info';
+import CoreGame from '../../pages/game';
 import Charts from '../../pages/components/charts/Charts';
 import Dashboard from '../../pages/dashboard';
 
@@ -89,6 +90,7 @@ class Layout extends React.Component {
                     <Route path="/app/testing" exact component={Testing} />
                     <Route path="/app/webinar" exact component={CoreWebinar} />
                     <Route path="/app/info" exact component={CoreInfo} />
+                    <Route path="/app/game" exact component={CoreGame} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>

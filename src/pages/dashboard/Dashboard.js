@@ -1,11 +1,10 @@
 import React from 'react';
-import { Row, Col, Progress, Table, Label, Input } from 'reactstrap';
+import { Row, Col, Progress, Table } from 'reactstrap';
 
 import Widget from '../../components/Widget';
 
 import Calendar from './components/calendar/Calendar';
 import Map from './components/am4chartMap/am4chartMap';
-import Rickshaw from './components/rickshaw/Rickshaw';
 
 import AnimateNumber from 'react-animated-number';
 

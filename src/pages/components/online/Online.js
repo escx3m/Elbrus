@@ -26,7 +26,7 @@ class Online extends React.Component {
   render() {
     return (
       <section className={`${s.root} mb-4`}>
-        <h1 className="page-title">Офлайн мероприятия</h1>
+        <h1 className="page-title">Онлайн мероприятия</h1>
 
         {/* tabs */}
         <Nav className="bg-transparent" tabs>
@@ -106,35 +106,47 @@ class Online extends React.Component {
             <div>
               <Row className="icon-list">
 
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Дата</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">Время</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Тема</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Действие</Col>
+                <Col md={3} lg={3} xs={12} className="list-item">Ссылка</Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">10:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/10/185/" target="_blank">Уроки лидерства</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">11:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/2/269/" target="_blank">Урок памяти и славы</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">25 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">09:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/9/189/" target="_blank">Финансовая грамотность</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">12:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">14:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
               </Row>
             </div>
@@ -145,35 +157,47 @@ class Online extends React.Component {
             <div>
               <Row className="icon-list">
 
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Дата</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">Время</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Тема</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Действие</Col>
+                <Col md={3} lg={3} xs={12} className="list-item">Ссылка</Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">10:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/10/185/" target="_blank">Уроки лидерства</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">11:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/2/269/" target="_blank">Урок памяти и славы</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">25 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">09:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/9/189/" target="_blank">Финансовая грамотность</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">12:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">14:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
               </Row>
             </div>
@@ -184,35 +208,47 @@ class Online extends React.Component {
             <div>
               <Row className="icon-list">
 
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Дата</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">Время</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Тема</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Действие</Col>
+                <Col md={3} lg={3} xs={12} className="list-item">Ссылка</Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">10:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/10/185/" target="_blank">Уроки лидерства</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">11:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/2/269/" target="_blank">Урок памяти и славы</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">25 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">09:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/9/189/" target="_blank">Финансовая грамотность</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">12:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">14:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
               </Row>
             </div>
@@ -223,35 +259,47 @@ class Online extends React.Component {
             <div>
               <Row className="icon-list">
 
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Дата</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">Время</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Тема</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Действие</Col>
+                <Col md={3} lg={3} xs={12} className="list-item">Ссылка</Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">10:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/10/185/" target="_blank">Уроки лидерства</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">11:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/2/269/" target="_blank">Урок памяти и славы</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">25 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">09:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/9/189/" target="_blank">Финансовая грамотность</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">12:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">14:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
               </Row>
             </div>
@@ -262,35 +310,47 @@ class Online extends React.Component {
             <div>
               <Row className="icon-list">
 
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Дата</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">Время</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Тема</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Действие</Col>
+                <Col md={3} lg={3} xs={12} className="list-item">Ссылка</Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">10:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/10/185/" target="_blank">Уроки лидерства</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">11:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/2/269/" target="_blank">Урок памяти и славы</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">25 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">09:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/9/189/" target="_blank">Финансовая грамотность</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">12:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">14:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
               </Row>
             </div>
@@ -301,35 +361,47 @@ class Online extends React.Component {
             <div>
               <Row className="icon-list">
 
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Дата</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">Время</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Тема</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Действие</Col>
+                <Col md={3} lg={3} xs={12} className="list-item">Ссылка</Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">10:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/10/185/" target="_blank">Уроки лидерства</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">11:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/2/269/" target="_blank">Урок памяти и славы</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">25 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">09:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/9/189/" target="_blank">Финансовая грамотность</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">12:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">14:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
               </Row>
             </div>
@@ -340,35 +412,47 @@ class Online extends React.Component {
             <div>
               <Row className="icon-list">
 
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Дата</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">Время</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Тема</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Действие</Col>
+                <Col md={3} lg={3} xs={12} className="list-item">Ссылка</Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">10:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/10/185/" target="_blank">Уроки лидерства</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">11:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/2/269/" target="_blank">Урок памяти и славы</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">25 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">09:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/9/189/" target="_blank">Финансовая грамотность</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">12:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">14:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
               </Row>
             </div>
@@ -380,35 +464,47 @@ class Online extends React.Component {
             <div>
               <Row className="icon-list">
 
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Дата</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">Время</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Тема</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Спикер</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Действие</Col>
+                <Col md={3} lg={3} xs={12} className="list-item">Ссылка</Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">10:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/10/185/" target="_blank">Уроки лидерства</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Мария Гладышева</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">24 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">11:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/2/269/" target="_blank">Урок памяти и славы</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Борис Изюмов</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">25 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">09:00</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/9/189/" target="_blank">Финансовая грамотность</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Олег Демиденко</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">12:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Светлана Грохотова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">26 ноября 2020</Col>
+                <Col md={1} lg={1} xs={12} className="list-item">14:20</Col>
+                <Col md={2} lg={2} xs={12} className="list-item"><a href="https://rsv.ru/edu/courses/1/334/" target="_blank">Женщина-Лидер</a></Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Инна Анисимова</Col>
+                <Col md={2} lg={2} xs={12} className="list-item">Создать реферальную ссылку</Col>
+                <Col md={3} lg={3} xs={12} className="list-item"><span className="refLink">ссылка</span></Col>
 
               </Row>
             </div>

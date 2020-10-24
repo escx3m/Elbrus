@@ -2,7 +2,6 @@ import React from 'react';
 import cx from 'classnames';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Progress, Alert } from 'reactstrap';
 import { withRouter } from 'react-router-dom';
 import { dismissAlert } from '../../actions/alerts';
 import s from './Sidebar.module.scss';
@@ -11,7 +10,6 @@ import LinksGroup from './LinksGroup';
 import elbrus from '../../images/first.svg';
 
 import { changeActiveSidebarItem } from '../../actions/navigation';
-import { logoutUser } from '../../actions/user';
 
 class Sidebar extends React.Component {
     static propTypes = {
@@ -104,9 +102,9 @@ class Sidebar extends React.Component {
                             this.props.dispatch(changeActiveSidebarItem(t))
                         }
                         activeItem={this.props.activeItem}
-                        header='Шаблон таблиц'
+                        header='Пользователи'
                         isHeader
-                        iconName='flaticon-map-location'
+                        iconName='flaticon-layers'
                         link='/app/tables'
                         index='tables'
                     />
@@ -130,6 +128,17 @@ class Sidebar extends React.Component {
                         isHeader
                         iconName='flaticon-layers'
                         link='/app/info'
+                        index='ui'
+                    />
+                    <LinksGroup
+                        onActiveSidebarItemChange={activeItem =>
+                            this.props.dispatch(changeActiveSidebarItem(activeItem))
+                        }
+                        activeItem={this.props.activeItem}
+                        header='Игра'
+                        isHeader
+                        iconName='flaticon-layers'
+                        link='/app/game'
                         index='ui'
                     />
                     <LinksGroup
