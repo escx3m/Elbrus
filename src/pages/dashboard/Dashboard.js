@@ -167,7 +167,7 @@ class Dashboard extends React.Component {
             </Widget>
           </Col>
           <Col lg={4} xs={12}>
-            <Widget title={<h6> Следующиее событие </h6>} close settings>
+            <Widget title={<h6> Следующее событие </h6>} close settings>
               <div className='stats-row'>
                 <div className='stat-item'>
                   <h6 className='name'>Дата</h6>
@@ -189,23 +189,23 @@ class Dashboard extends React.Component {
             </Widget>
           </Col>
           <Col lg={4} xs={12}>
-            <Widget title={<h6> Следующиее событие </h6>} close settings>
+            <Widget title={<h6>Статистика событий</h6>} close settings>
               <div className='stats-row'>
                 <div className='stat-item'>
-                  <h6 className='name'>Дата</h6>
-                  <p className='value'>30 Октября 2020</p>
+                  <h6 className='name'>Всего</h6>
+                  <p className='value'>30</p>
                 </div>
                 <div className='stat-item'>
-                  <h6 className='name'>Время</h6>
-                  <p className='value'>10:38</p>
+                  <h6 className='name'>Пройдено</h6>
+                  <p className='value'>10</p>
                 </div>
                 <div className='stat-item'>
-                  <h6 className='name'>Формат</h6>
-                  <p className='value'>Офлайн</p>
+                  <h6 className='name'>Предстоящие</h6>
+                  <p className='value'>17</p>
                 </div>
                 <div className='stat-item'>
-                  <h6 className='name'>Название</h6>
-                  <p className='value'>Лидерство</p>
+                  <h6 className='name'>Отменено</h6>
+                  <p className='value'>3</p>
                 </div>
               </div>
             </Widget>
