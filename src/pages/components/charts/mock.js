@@ -95,7 +95,7 @@ export const chartData = {
         }
       },
       legend: {
-        data: ['2015 Precipitation', '2016 Precipitation'],
+        data: ['2019', '2020'],
         textStyle: {
           color: colors.textColor
         }
@@ -119,7 +119,7 @@ export const chartData = {
           axisPointer: {
             label: {
               formatter: function (params) {
-                return 'Precipitation  ' + params.value
+                return 'Количество участников квартал ' + params.value
                   + (params.seriesData.length ? '：' + params.seriesData[0].data : '');
               }
             }
@@ -140,7 +140,7 @@ export const chartData = {
           axisPointer: {
             label: {
               formatter: function (params) {
-                return 'Precipitation  ' + params.value
+                return 'Количество участников квартал  ' + params.value
                   + (params.seriesData.length ? '：' + params.seriesData[0].data : '');
               }
             }
@@ -173,14 +173,14 @@ export const chartData = {
       ],
       series: [
         {
-          name: '2015 Precipitation',
+          name: '2019',
           type: 'line',
           xAxisIndex: 1,
           smooth: true,
           data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
         },
         {
-          name: '2016 Precipitation',
+          name: '2020',
           type: 'line',
           smooth: true,
           data: [3.9, 5.9, 11.1, 18.7, 48.3, 69.2, 231.6, 46.6, 55.4, 18.4, 10.3, 0.7]
@@ -198,7 +198,7 @@ export const chartData = {
       color: [colors.blue, colors.green, colors.orange, colors.red, colors.purple],
       series: [
         {
-          name: 'Access source',
+          name: 'Ячейка успеха',
           type: 'pie',
           radius: ['50%', '70%'],
           avoidLabelOverlap: false,
@@ -221,11 +221,11 @@ export const chartData = {
             }
           },
           data: [
-            { value: 335, name: 'Direct interview' },
-            { value: 310, name: 'Email marketing' },
-            { value: 234, name: 'Alliance advertising' },
-            { value: 135, name: 'Video ad' },
-            { value: 1548, name: 'Search engine' }
+            { value: 335, name: 'Основная информация' },
+            { value: 310, name: 'Email почта' },
+            { value: 234, name: 'Пройденные курсы' },
+            { value: 135, name: 'Загруженные видео' },
+            { value: 1548, name: 'Работа в проектах' }
           ]
         }
       ]
@@ -346,7 +346,7 @@ export const chartData = {
         enabled: false
       },
       title: {
-        text: 'Snow depth at Vikjafjellet, Norway',
+        text: 'График роста вашей активности',
         style: {
           color: colors.textColor
         }
@@ -396,7 +396,7 @@ export const chartData = {
       colors: [colors.green, colors.blue, colors.red],
 
       series: [{
-        name: "Winter 2014-2015",
+        name: "Лучший на платформе",
         data: [
           [Date.UTC(1970, 10, 25), 0],
           [Date.UTC(1970, 11, 6), 0.25],
@@ -427,7 +427,7 @@ export const chartData = {
           [Date.UTC(1971, 6, 4), 0]
         ]
       }, {
-        name: "Winter 2015-2016",
+        name: "Ваши показатели",
         type: 'areaspline',
         data: [
           [Date.UTC(1970, 10, 9), 0],
@@ -455,7 +455,7 @@ export const chartData = {
           [Date.UTC(1971, 5, 7), 0]
         ]
       }, {
-        name: "Winter 2016-2017",
+        name: "Средние значение по платформе",
         type: 'areaspline',
         data: [
           [Date.UTC(1970, 9, 15), 0],
@@ -588,7 +588,7 @@ export const liveChart = {
     enabled: false
   },
   series: [{
-    name: 'Random data',
+    name: 'Новых заявок',
     data: (function () {
       // generate an array of random data
       var data = [],

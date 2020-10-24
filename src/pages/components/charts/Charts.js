@@ -99,17 +99,17 @@ class Charts extends React.Component {
             </Col>
             <Col lg={5} xs={12}>
               <Widget
-                title={<h5>Highcharts <span className='fw-semi-bold'>Line Chart</span></h5>}
+                title={<h5>Ваш график <span className='fw-semi-bold'>успеха</span></h5>}
                 close collapse
               >
                 <HighchartsReact options={cd.highcharts.mixed} />
-                <h5 className="mt">Interactive <span className="fw-semi-bold">Sparklines</span></h5>
+                <h5 className="mt">Интерактивная <span className="fw-semi-bold">шкала</span></h5>
                 <Row className="mt">
                   <Col md={6} xs={12}>
                     <div className="stats-row">
                       <div className="stat-item">
                         <p className="value5 fw-thin">34 567</p>
-                        <h6 className="name text-muted m0 fs-mini">Overall Values</h6>
+                        <h6 className="name text-muted m0 fs-mini">Участников</h6>
                       </div>
                       <div className="stat-item stat-item-mini-chart">
                         <Sparklines
@@ -124,8 +124,8 @@ class Charts extends React.Component {
                   <Col md={6} xs={12}>
                     <div className="stats-row">
                       <div className="stat-item">
-                        <p className="value5 fw-thin">34 567</p>
-                        <h6 className="name text-muted m0 fs-mini">Overall Values</h6>
+                        <p className="value5 fw-thin">1 567</p>
+                        <h6 className="name text-muted m0 fs-mini">Новые пользователи</h6>
                       </div>
                       <div className="stat-item stat-item-mini-chart">
                         <Sparklines
@@ -158,7 +158,7 @@ class Charts extends React.Component {
                 </Col>
                 <Col lg={6} xs={12}>
                   <Widget
-                    title={<h5>Chart <span className="fw-semi-bold">Donut Chart</span></h5>}
+                    title={<h5>Заполнение анкеты <span className="fw-semi-bold">участника</span></h5>}
                     close collapse
                   >
                     <ReactEchartsCore
@@ -171,7 +171,7 @@ class Charts extends React.Component {
                 </Col>
                 <Col lg={12} xs={12}>
                   <Widget
-                    title={<h5>Highcharts <span className="fw-semi-bold">Live Chart</span></h5>}
+                    title={<h5>Количество <span className="fw-semi-bold">новых заявок</span></h5>}
                     close collapse
                   >
                     <HighchartsReact options={ld} />
@@ -179,7 +179,7 @@ class Charts extends React.Component {
                 </Col>
               </Row>
             </Col>
-            <Col lg={12} xs={12}>
+            {/* <Col lg={12} xs={12}>
               <Widget
                 title={<h5>Echarts <span className="fw-semi-bold">River Chart</span></h5>}
                 close collapse
@@ -191,7 +191,7 @@ class Charts extends React.Component {
                   style={{ height: "350px" }}
                 />
               </Widget>
-            </Col>
+            </Col> */}
           </Row>
         </div>
       </div>
