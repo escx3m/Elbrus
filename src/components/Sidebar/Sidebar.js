@@ -76,7 +76,9 @@ class Sidebar extends React.Component {
                 <ul className={s.nav}>
                     <LinksGroup
                         onActiveSidebarItemChange={activeItem =>
-                            this.props.dispatch(changeActiveSidebarItem(activeItem))
+                            this.props.dispatch(
+                                changeActiveSidebarItem(activeItem)
+                            )
                         }
                         activeItem={this.props.activeItem}
                         header='Рабочий стол'
@@ -85,10 +87,14 @@ class Sidebar extends React.Component {
                         link='/app/main'
                         index='main'
                     />
-                    <h5 className={[s.navTitle, s.groupTitle].join(' ')}>МЕНЮ</h5>
+                    <h5 className={[s.navTitle, s.groupTitle].join(' ')}>
+                        МЕНЮ
+                    </h5>
                     <LinksGroup
                         onActiveSidebarItemChange={activeItem =>
-                            this.props.dispatch(changeActiveSidebarItem(activeItem))
+                            this.props.dispatch(
+                                changeActiveSidebarItem(activeItem)
+                            )
                         }
                         activeItem={this.props.activeItem}
                         header='Вебинары'
@@ -110,10 +116,12 @@ class Sidebar extends React.Component {
                     />
                     <LinksGroup
                         onActiveSidebarItemChange={activeItem =>
-                            this.props.dispatch(changeActiveSidebarItem(activeItem))
+                            this.props.dispatch(
+                                changeActiveSidebarItem(activeItem)
+                            )
                         }
                         activeItem={this.props.activeItem}
-                        header='Эльбрас валюта'
+                        header='Эльбрус валюта'
                         isHeader
                         iconName='flaticon-layers'
                         link='/app/elbrus'
@@ -121,7 +129,9 @@ class Sidebar extends React.Component {
                     />
                     <LinksGroup
                         onActiveSidebarItemChange={activeItem =>
-                            this.props.dispatch(changeActiveSidebarItem(activeItem))
+                            this.props.dispatch(
+                                changeActiveSidebarItem(activeItem)
+                            )
                         }
                         activeItem={this.props.activeItem}
                         header='Персональные данные'
@@ -132,7 +142,9 @@ class Sidebar extends React.Component {
                     />
                     <LinksGroup
                         onActiveSidebarItemChange={activeItem =>
-                            this.props.dispatch(changeActiveSidebarItem(activeItem))
+                            this.props.dispatch(
+                                changeActiveSidebarItem(activeItem)
+                            )
                         }
                         activeItem={this.props.activeItem}
                         header='Игра'
@@ -143,7 +155,9 @@ class Sidebar extends React.Component {
                     />
                     <LinksGroup
                         onActiveSidebarItemChange={activeItem =>
-                            this.props.dispatch(changeActiveSidebarItem(activeItem))
+                            this.props.dispatch(
+                                changeActiveSidebarItem(activeItem)
+                            )
                         }
                         activeItem={this.props.activeItem}
                         header='Мероприятия'
