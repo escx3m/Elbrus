@@ -18,10 +18,10 @@ class ErrorPage extends React.Component {
           <div className={`${s.errorContainer} mx-auto`}>
             <h1 className={s.errorCode}>404</h1>
             <p className={s.errorInfo}>
-              Opps, it seems that this page does not exist here.
+              Ой, похоже такой страницы тут нету.
             </p>
             <p className={[s.errorHelp, 'mb-3'].join(' ')}>
-              If you are sure it should, please search for it:
+              Найдите, то что Вам нужно:
             </p>
             <Form method="get">
               <FormGroup>
@@ -29,13 +29,13 @@ class ErrorPage extends React.Component {
               </FormGroup>
               <Link to="app/extra/search">
                 <Button className={s.errorBtn} type="submit" color="inverse">
-                  Search <i className="fa fa-search text-secondary ml-xs" />
+                  Поиск <i className="fa fa-search text-secondary ml-xs" />
                 </Button>
               </Link>
             </Form>
           </div>
           <footer className={s.pageFooter}>
-            2020 &copy; Light Blue Template - React Admin Dashboard Template.
+            2020 &copy; web.elbrus.ru
           </footer>
         </Container>
       </div>

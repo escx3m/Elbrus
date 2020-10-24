@@ -8,11 +8,11 @@ import Widget from '../../../components/Widget';
 import ApexChart from 'react-apexcharts';
 
 import s from './Charts.module.scss';
-import {chartData, liveChart, liveChartInterval} from './mock';
+import { chartData, liveChart, liveChartInterval } from './mock';
 import Sparklines from '../../../components/Sparklines';
 
 import ReactEchartsCore from 'echarts-for-react/lib/core';
- 
+
 import echarts from 'echarts/lib/echarts';
 
 import 'echarts/lib/chart/line';
@@ -39,7 +39,7 @@ class Charts extends React.Component {
       renderer: 'canvas'
     },
     sparklineData: {
-      series: [{data: [1,7,3,5,7,8]}],
+      series: [{ data: [1, 7, 3, 5, 7, 8] }],
       options1: {
         colors: ['#ffc247'],
         plotOptions: {
@@ -67,17 +67,17 @@ class Charts extends React.Component {
     const { cd, ld, initEchartsOptions, sparklineData } = this.state
     return (
       <div className={s.root}>
-        <h1 className="page-title">Visual - <span className="fw-semi-bold">Charts</span></h1>
+        <h1 className="page-title">Статистика участников</h1>
         <div>
           <Row>
             <Col lg={7} xs={12}>
               <Widget
-                title={<h5>Apex <span className='fw-semi-bold'>Column Chart</span></h5>}
+                title={<h5>Топ 8 участнков</h5>}
                 close collapse
               >
-                <ApexChart 
-                  className="sparkline-chart" 
-                  height={350} 
+                <ApexChart
+                  className="sparkline-chart"
+                  height={350}
                   series={cd.apex.column.series}
                   options={cd.apex.column.options}
                   type={"bar"}
@@ -86,14 +86,14 @@ class Charts extends React.Component {
             </Col>
             <Col lg={5} xs={12}>
               <Widget
-                title={<h5>Echarts <span className='fw-semi-bold'>Line Chart</span></h5>}
+                title={<h5>Количество пользователей</h5>}
                 close collapse
               >
                 <ReactEchartsCore
                   echarts={echarts}
                   option={cd.echarts.line}
                   opts={initEchartsOptions}
-                  style={{height: "365px"}}
+                  style={{ height: "365px" }}
                 />
               </Widget>
             </Col>
@@ -102,7 +102,7 @@ class Charts extends React.Component {
                 title={<h5>Highcharts <span className='fw-semi-bold'>Line Chart</span></h5>}
                 close collapse
               >
-                <HighchartsReact options={cd.highcharts.mixed}/>
+                <HighchartsReact options={cd.highcharts.mixed} />
                 <h5 className="mt">Interactive <span className="fw-semi-bold">Sparklines</span></h5>
                 <Row className="mt">
                   <Col md={6} xs={12}>
@@ -112,7 +112,7 @@ class Charts extends React.Component {
                         <h6 className="name text-muted m0 fs-mini">Overall Values</h6>
                       </div>
                       <div className="stat-item stat-item-mini-chart">
-                        <Sparklines 
+                        <Sparklines
                           options={sparklineData.options2}
                           width={80}
                           height={25}
@@ -128,7 +128,7 @@ class Charts extends React.Component {
                         <h6 className="name text-muted m0 fs-mini">Overall Values</h6>
                       </div>
                       <div className="stat-item stat-item-mini-chart">
-                        <Sparklines 
+                        <Sparklines
                           options={sparklineData.options1}
                           width={80}
                           height={25}
@@ -144,13 +144,13 @@ class Charts extends React.Component {
               <Row>
                 <Col lg={6} xs={12}>
                   <Widget
-                    title={<h5>Apex <span className="fw-semi-bold">Monochrome Pie</span></h5>}
+                    title={<h5>Соотношение записей на онлайн встречи</h5>}
                     close collapse
                   >
-                    <ApexChart 
+                    <ApexChart
                       className="sparkline-chart"
-                      type={"pie"} 
-                      height={200} 
+                      type={"pie"}
+                      height={200}
                       series={cd.apex.pie.series}
                       options={cd.apex.pie.options}
                     />
@@ -165,7 +165,7 @@ class Charts extends React.Component {
                       echarts={echarts}
                       option={cd.echarts.donut}
                       opts={initEchartsOptions}
-                      style={{height: "170px"}}
+                      style={{ height: "170px" }}
                     />
                   </Widget>
                 </Col>
@@ -188,7 +188,7 @@ class Charts extends React.Component {
                   echarts={echarts}
                   option={cd.echarts.river}
                   opts={initEchartsOptions}
-                  style={{height: "350px"}}
+                  style={{ height: "350px" }}
                 />
               </Widget>
             </Col>
