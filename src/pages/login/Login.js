@@ -5,7 +5,11 @@ import { connect } from 'react-redux';
 import { Container, Alert, Button, FormGroup, Label, InputGroup, InputGroupAddon, Input, InputGroupText } from 'reactstrap';
 import Widget from '../../components/Widget';
 import { loginUser } from '../../actions/user';
-import microsoft from '../../images/microsoft.png';
+
+import vkLogo from '../../images/social/vkLogo.png';
+import facebookLogo from '../../images/social/facebookLogo.png';
+import googleLogo from '../../images/social/googleLogo.png';
+import logoForm from '../../images/logoForm.png';
 
 class Login extends React.Component {
     static propTypes = {
@@ -20,7 +24,7 @@ class Login extends React.Component {
         super(props);
 
         this.state = {
-            email: 'admin@flatlogic.com',
+            email: 'admin@elbrus.ru',
             password: 'password',
         };
 
@@ -59,10 +63,11 @@ class Login extends React.Component {
 
         return (
             <div className="auth-page">
+                <a href="https://club-elbrus.ru/" target="_blank"><img src={logoForm} className="logoForm" alt="logoForm" /></a>
                 <Container>
-                    <Widget className="widget-auth mx-auto" title={<h3 className="mt-0">Login to your Web App</h3>}>
+                    <Widget className="widget-auth mx-auto" title={<h3 className="mt-0">Войти в систему</h3>}>
                         <p className="widget-auth-info">
-                            Use your email to sign in.
+                            Используйте Ваш почтоый адрес.
                         </p>
                         <form onSubmit={this.doLogin}>
                             {
@@ -73,59 +78,50 @@ class Login extends React.Component {
                                 )
                             }
                             <FormGroup className="mt">
-                                <Label for="email">Email</Label>
+                                <Label for="email">Почтовый адрес</Label>
                                 <InputGroup className="input-group-no-border">
                                     <InputGroupAddon addonType="prepend">
                                         <InputGroupText>
-                                            <i className="la la-user text-white"/>
+                                            <i className="la la-user text-white" />
                                         </InputGroupText>
                                     </InputGroupAddon>
                                     <Input id="email" className="input-transparent pl-3" value={this.state.email} onChange={this.changeEmail} type="email"
-                                           required name="email" placeholder="Email"/>
+                                        required name="email" placeholder="Email" />
                                 </InputGroup>
                             </FormGroup>
                             <FormGroup>
-                                <Label for="password">Password</Label>
+                                <Label for="password">Пароль</Label>
                                 <InputGroup className="input-group-no-border">
                                     <InputGroupAddon addonType="prepend">
                                         <InputGroupText>
-                                            <i className="la la-lock text-white"/>
+                                            <i className="la la-lock text-white" />
                                         </InputGroupText>
                                     </InputGroupAddon>
                                     <Input id="password" className="input-transparent pl-3" value={this.state.password}
-                                           onChange={this.changePassword} type="password"
-                                           required name="password" placeholder="Password"/>
+                                        onChange={this.changePassword} type="password"
+                                        required name="password" placeholder="Password" />
                                 </InputGroup>
                             </FormGroup>
                             <div className="bg-widget auth-widget-footer">
-                                <Button type="submit" color="danger" className="auth-btn"
-                                        size="sm" style={{color: '#fff'}}>
-                                  <span className="auth-btn-circle" style={{marginRight: 8}}>
-                                    <i className="la la-caret-right"/>
-                                  </span>
-                                  {this.props.isFetching ? 'Loading...' : 'Login'}
+                                <Button type="submit" className="auth-btn"
+                                    size="sm" style={{ color: '#fff' }}>
+                                    {this.props.isFetching ? 'Вход...' : 'Вход'}
                                 </Button>
                                 <p className="widget-auth-info mt-4">
-                                    Don't have an account? Sign up now!
+                                    Нету аккаунта? Создай!
                                 </p>
-                                <Link className="d-block text-center mb-4" to="register">Create an Account</Link>
-                                <div className="social-buttons">
-                                    <Button color="primary" className="social-button">
-                                        <i className="social-icon social-google"/>
-                                        <p className="social-text">GOOGLE</p>
-                                    </Button>
-                                    <Button color="success" className="social-button">
-                                        <i className="social-icon social-microsoft"
-                                           style={{backgroundImage: `url(${microsoft})`}}/>
-                                        <p className="social-text" style={{color: '#fff'}}>MICROSOFT</p>
-                                    </Button>
+                                <Link className="d-block text-center mb-4" to="register">Создать аккаунт</Link>
+                                <div className="blockLink">
+                                    <img src={vkLogo} className="socialIcon" alt="logoVk" />
+                                    <span className="socialMargin"><img src={facebookLogo} className="socialIcon" alt="logoFacebook" /></span>
+                                    <img src={googleLogo} className="socialIcon" alt="logoGooglePlus" />
                                 </div>
                             </div>
                         </form>
                     </Widget>
                 </Container>
                 <footer className="auth-footer">
-                    2020 &copy; Light Blue Template - React Admin Dashboard Template.
+                    2020 &copy; web.elbrus.ru
                 </footer>
             </div>
         );

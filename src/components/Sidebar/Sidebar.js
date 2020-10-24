@@ -1,15 +1,15 @@
 import React from 'react';
 import cx from 'classnames';
 import PropTypes from 'prop-types';
-import {connect} from 'react-redux';
-import {Progress, Alert} from 'reactstrap';
-import {withRouter} from 'react-router-dom';
-import {dismissAlert} from '../../actions/alerts';
+import { connect } from 'react-redux';
+import { Progress, Alert } from 'reactstrap';
+import { withRouter } from 'react-router-dom';
+import { dismissAlert } from '../../actions/alerts';
 import s from './Sidebar.module.scss';
 import LinksGroup from './LinksGroup';
 
-import {changeActiveSidebarItem} from '../../actions/navigation';
-import {logoutUser} from '../../actions/user';
+import { changeActiveSidebarItem } from '../../actions/navigation';
+import { logoutUser } from '../../actions/user';
 
 class Sidebar extends React.Component {
     static propTypes = {
@@ -71,14 +71,15 @@ class Sidebar extends React.Component {
                 }}
             >
                 <header className={s.logo}>
-                    <a href="https://demo.flatlogic.com/light-blue-react/">Light <span
-                        className="fw-bold">Blue</span></a>
+                    <a href="https://club-elbrus.ru/" target="_blank">
+                        <span className="fw-bold">Эльбрус</span>
+                    </a>
                 </header>
                 <ul className={s.nav}>
                     <LinksGroup
                         onActiveSidebarItemChange={activeItem => this.props.dispatch(changeActiveSidebarItem(activeItem))}
                         activeItem={this.props.activeItem}
-                        header="Dashboard"
+                        header="Рабочий стол"
                         isHeader
                         iconName="flaticon-home"
                         link="/app/main"
@@ -88,10 +89,10 @@ class Sidebar extends React.Component {
                     <LinksGroup
                         onActiveSidebarItemChange={activeItem => this.props.dispatch(changeActiveSidebarItem(activeItem))}
                         activeItem={this.props.activeItem}
-                        header="Typography"
+                        header="Вебинары"
                         isHeader
                         iconName="flaticon-network"
-                        link="/app/typography"
+                        link="/app/webinar"
                         index="core"
                     />
                     <LinksGroup
@@ -115,20 +116,23 @@ class Sidebar extends React.Component {
                     <LinksGroup
                         onActiveSidebarItemChange={activeItem => this.props.dispatch(changeActiveSidebarItem(activeItem))}
                         activeItem={this.props.activeItem}
-                        header="Components"
+                        header="Мероприятия"
                         isHeader
                         iconName="flaticon-list"
                         link="/app/forms"
                         index="forms"
                         childrenLinks={[
                             {
-                                header: 'Charts', link: '/app/charts',
+                                header: 'Статистика', link: '/app/charts',
                             },
                             {
-                                header: 'Icons', link: '/app/icons',
+                                header: 'Онлайн', link: '/app/online',
                             },
                             {
-                                header: 'Maps', link: '/app/maps',
+                                header: 'Офлайн', link: '/app/offline',
+                            },
+                            {
+                                header: 'Тестирование', link: '/app/testing',
                             },
                         ]}
                     />
@@ -137,26 +141,26 @@ class Sidebar extends React.Component {
                     LABELS
                     {/* eslint-disable-next-line */}
                     <a className={s.actionLink}>
-                        <i className={`${s.glyphiconSm} glyphicon glyphicon-plus float-right`}/>
+                        <i className={`${s.glyphiconSm} glyphicon glyphicon-plus float-right`} />
                     </a>
                 </h5>
                 {/* eslint-disable */}
                 <ul className={s.sidebarLabels}>
                     <li>
                         <a href="#">
-                            <i className="fa fa-circle text-success mr-2"/>
+                            <i className="fa fa-circle text-success mr-2" />
                             <span className={s.labelName}>My Recent</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i className="fa fa-circle text-primary mr-2"/>
+                            <i className="fa fa-circle text-primary mr-2" />
                             <span className={s.labelName}>Starred</span>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i className="fa fa-circle text-danger mr-2"/>
+                            <i className="fa fa-circle text-danger mr-2" />
                             <span className={s.labelName}>Background</span>
                         </a>
                     </li>
@@ -175,9 +179,9 @@ class Sidebar extends React.Component {
                                 this.dismissAlert(alert.id);
                             }}
                         >
-                            <span>{alert.title}</span><br/>
+                            <span>{alert.title}</span><br />
                             <Progress className={`bg-custom-dark progress-xs mt-1`} color={alert.color}
-                                      value={alert.value}/>
+                                value={alert.value} />
                             <small>{alert.footer}</small>
                         </Alert>,
                     )}

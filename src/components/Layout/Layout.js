@@ -5,11 +5,12 @@ import { Switch, Route, withRouter, Redirect } from 'react-router';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Hammer from 'rc-hammerjs';
 
-import UIIcons from '../../pages/components/icons';
+import OnlineEvent from '../../pages/components/online';
 import UINotifications from '../../pages/notifications';
 import TablesStatic from '../../pages/tables/static';
-import MapsGoogle from '../../pages/components/maps/google';
-import CoreTypography from '../../pages/typography';
+import OfflineEvent from '../../pages/components/offline/offline';
+import Testing from '../../pages/components/testing';
+import CoreWebinar from '../../pages/webinar';
 import Charts from '../../pages/components/charts/Charts';
 import Dashboard from '../../pages/dashboard';
 
@@ -79,12 +80,13 @@ class Layout extends React.Component {
                   <Switch>
                     <Route path="/app/main" exact render={() => <Redirect to="/app/main/dashboard" />} />
                     <Route path="/app/main/dashboard" exact component={Dashboard} />
-                    <Route path="/app/icons" exact component={UIIcons} />
+                    <Route path="/app/online" exact component={OnlineEvent} />
                     <Route path="/app/notifications" exact component={UINotifications} />
                     <Route path="/app/charts" exact component={Charts} />
                     <Route path="/app/tables" exact component={TablesStatic} />
-                    <Route path="/app/maps" exact component={MapsGoogle} />
-                    <Route path="/app/typography" exact component={CoreTypography} />
+                    <Route path="/app/offline" exact component={OfflineEvent} />
+                    <Route path="/app/testing" exact component={Testing} />
+                    <Route path="/app/webinar" exact component={CoreWebinar} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
