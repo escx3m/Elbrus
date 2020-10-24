@@ -8,6 +8,8 @@ import { dismissAlert } from '../../actions/alerts';
 import s from './Sidebar.module.scss';
 import LinksGroup from './LinksGroup';
 
+import elbrus from '../../images/first.svg';
+
 import { changeActiveSidebarItem } from '../../actions/navigation';
 import { logoutUser } from '../../actions/user';
 
@@ -29,8 +31,6 @@ class Sidebar extends React.Component {
 
   constructor(props) {
     super(props);
-
-    this.doLogout = this.doLogout.bind(this);
   }
 
   componentDidMount() {
@@ -62,10 +62,6 @@ class Sidebar extends React.Component {
     this.props.dispatch(dismissAlert(id));
   }
 
-  doLogout() {
-    this.props.dispatch(logoutUser());
-  }
-
   render() {
     return (
       <nav
@@ -76,7 +72,7 @@ class Sidebar extends React.Component {
       >
         <header className={s.logo}>
           <a href='https://club-elbrus.ru/' target='_blank'>
-            <span className='fw-bold'>Эльбрус</span>
+            <img src={elbrus} alt='Эльбрус' />
           </a>
         </header>
         <ul className={s.nav}>
