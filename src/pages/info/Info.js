@@ -215,7 +215,7 @@ const Info = props => {
             </FormGroup>
 
             <FormGroup>
-              <Label for='linkInstagram'></Label>
+              <Label for='linkInstagram'>Инстаграм</Label>
               <InputGroup className='input-group-no-border'>
                 <Input
                   id='linkInstagram'
@@ -223,6 +223,19 @@ const Info = props => {
                   value={user.link && user.link.instagram}
                   onChange={changeField}
                   name='linkInstagram'
+                />
+              </InputGroup>
+            </FormGroup>
+
+            <FormGroup>
+              <Label for='linkTlg'>Телеграм</Label>
+              <InputGroup className='input-group-no-border'>
+                <Input
+                  id='linkTlg'
+                  className='input-transparent pl-3'
+                  value={user.telegram}
+                  onChange={changeField}
+                  name='linkTlg'
                 />
               </InputGroup>
             </FormGroup>
