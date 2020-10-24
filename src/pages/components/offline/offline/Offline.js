@@ -1,9 +1,18 @@
 import React from 'react';
 import {
-  TabContent, TabPane, Nav, NavItem, NavLink, Row, Col, Badge,
+  TabContent,
+  TabPane,
+  Nav,
+  NavItem,
+  NavLink,
+  Row,
+  Col,
+  Badge,
 } from 'reactstrap';
+import moment from 'moment';
 import classnames from 'classnames';
 
+import data from '../../../../data.json';
 import s from './Icons.module.scss';
 
 class Offline extends React.Component {
@@ -12,7 +21,17 @@ class Offline extends React.Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       activeTab: '1',
+      user: {},
+      page: 'offline',
+      tabs: [],
     };
+  }
+  componentDidMount() {
+    const user = data.users.find(
+      item => item.email === localStorage.getItem('ElbrusEmail')
+    );
+    const tabs = data.pages[this.state.page].tabs;
+    this.setState({ tabs, user });
   }
 
   toggle(tab) {
@@ -23,396 +42,106 @@ class Offline extends React.Component {
     }
   }
 
+  update() {
+    const tabs = data.pages[this.state.page].tabs;
+    this.setState({ tabs });
+    console.log('update, tabs = ', this.state.tabs);
+  }
+
   render() {
+    const tabsRender = this.state.tabs.map(tab => (
+      <NavItem key={`${this.state.page}-${tab.id}`}>
+        <NavLink
+          className={classnames({
+            active: this.state.activeTab === `${tab.id}`,
+          })}
+          onClick={() => {
+            this.toggle(`${tab.id}`);
+          }}
+        >
+          <span className='mr-xs'>{tab.name}</span>
+          <Badge color='primary'>{tab.id === '1' ? 'new' : ''}</Badge>
+        </NavLink>
+      </NavItem>
+    ));
+
     return (
       <section className={`${s.root} mb-4`}>
-        <h1 className="page-title">Офлайн мероприятия</h1>
+        <h1 className='page-title'>Офлайн мероприятия</h1>
+        <div>
+          <button
+            type='submit'
+            class='btn btn-default input-group-no-border btn btn-secondary'
+            style={{ color: 'rgb(0, 0, 0)', float: 'right' }}
+            onClick={() => {
+              this.update();
+            }}
+          >
+            Обновить
+          </button>
+        </div>
 
-        {/* tabs */}
-        <Nav className="bg-transparent" tabs>
-          <NavItem>
-            <NavLink
-              className={classnames({ active: this.state.activeTab === '1' })}
-              onClick={() => { this.toggle('1'); }}
-            >
-              <span className="mr-xs">Деловые игры</span>
-              <Badge color="primary">new</Badge>
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              className={classnames({ active: this.state.activeTab === '2' })}
-              onClick={() => { this.toggle('2'); }}
-            >
-              <span className="mr-xs">Программирование</span>
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              className={classnames({ active: this.state.activeTab === '3' })}
-              onClick={() => { this.toggle('3'); }}
-            >
-              <span className="mr-xs">Дизайн</span>
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              className={classnames({ active: this.state.activeTab === '4' })}
-              onClick={() => { this.toggle('4'); }}
-            >
-              <span>Финансы</span>
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              className={classnames({ active: this.state.activeTab === '5' })}
-              onClick={() => { this.toggle('5'); }}
-            >
-              <span>Мотивация</span>
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              className={classnames({ active: this.state.activeTab === '6' })}
-              onClick={() => { this.toggle('6'); }}
-            >
-              <span>Маркетинг</span>
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              className={classnames({ active: this.state.activeTab === '7' })}
-              onClick={() => { this.toggle('7'); }}
-            >
-              <span>SMM</span>
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              className={classnames({ active: this.state.activeTab === '8' })}
-              onClick={() => { this.toggle('8'); }}
-            >
-              <span className="mr-xs">Аналитика</span>
-              <Badge color="primary">new</Badge>
-            </NavLink>
-          </NavItem>
+        <Nav className='bg-transparent' tabs>
+          {tabsRender}
         </Nav>
 
-        {/* tab content */}
-
         <TabContent activeTab={this.state.activeTab}>
-
-          <TabPane tabId="1">
-            <div>
-              <Row className="icon-list">
-
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
-
-              </Row>
-            </div>
-          </TabPane>
-
-          {/* tab #2 */}
-          <TabPane tabId="2">
-            <div>
-              <Row className="icon-list">
-
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
-
-              </Row>
-            </div>
-          </TabPane>
-
-          {/* tab #3 */}
-          <TabPane tabId="3">
-            <div>
-              <Row className="icon-list">
-
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
-
-              </Row>
-            </div>
-          </TabPane>
-
-          {/* tab #4 */}
-          <TabPane tabId="4">
-            <div>
-              <Row className="icon-list">
-
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
-
-              </Row>
-            </div>
-          </TabPane>
-
-          {/* tab #5 */}
-          <TabPane tabId="5">
-            <div>
-              <Row className="icon-list">
-
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
-
-              </Row>
-            </div>
-          </TabPane>
-
-          {/* tab #6 */}
-          <TabPane tabId="6">
-            <div>
-              <Row className="icon-list">
-
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
-
-              </Row>
-            </div>
-          </TabPane>
-
-          {/* tab #7 */}
-          <TabPane tabId="7">
-            <div>
-              <Row className="icon-list">
-
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
-
-              </Row>
-            </div>
-          </TabPane>
-
-          {/* tab #8 */}
-
-          <TabPane tabId="8">
-            <div>
-              <Row className="icon-list">
-
-                <Col md={4} lg={3} xs={12} className="list-item">Дата</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Время</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Тема</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Спикер</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">10:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Уроки лидерства</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Мария Гладышева</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">24 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">11:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Урок памяти и славы</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Борис Изюмов</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">25 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">09:00</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Финансовая грамотность</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Олег Демиденко</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">12:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Светлана Грохотова</Col>
-
-                <Col md={4} lg={3} xs={12} className="list-item">26 ноября 2020</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">14:20</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Женщина-Лидер</Col>
-                <Col md={4} lg={3} xs={12} className="list-item">Инна Анисимова</Col>
-
-              </Row>
-            </div>
-          </TabPane>
+          {this.state.tabs.map(tab => {
+            const tabMeetupsRender = tab.meetups.map(meetup => {
+              const meetupDate = new Date(meetup.startDate);
+              const meetupTime = `${meetupDate
+                .getHours()
+                .toString()
+                .padStart(
+                  2,
+                  '0'
+                )}:${meetupDate.getMinutes().toString().padStart(2, '0')}`;
+
+              return (
+                <Row className='icon-list' key={`meetup${tab.id}-${meetup.id}`}>
+                  <Col md={2} lg={2} xs={12} className='list-item'>
+                    {moment(meetupDate).format('L')}
+                  </Col>
+                  <Col md={1} lg={1} xs={12} className='list-item'>
+                    {meetupTime}
+                  </Col>
+                  <Col md={2} lg={2} xs={12} className='list-item'>
+                    <a
+                      href='https://rsv.ru/edu/courses/10/185/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      {meetup.title}
+                    </a>
+                  </Col>
+                  <Col md={2} lg={2} xs={12} className='list-item'>
+                    {meetup.speaker}
+                  </Col>
+                </Row>
+              );
+            });
+
+            return (
+              <TabPane tabId={`${tab.id}`} key={`tab-pane-${tab.id}`}>
+                <Row className='icon-list' key={`${tab.id}-header`}>
+                  <Col md={2} lg={2} xs={12} className='list-item'>
+                    Дата
+                  </Col>
+                  <Col md={1} lg={1} xs={12} className='list-item'>
+                    Время
+                  </Col>
+                  <Col md={2} lg={2} xs={12} className='list-item'>
+                    Тема
+                  </Col>
+                  <Col md={2} lg={2} xs={12} className='list-item'>
+                    Спикер
+                  </Col>
+                </Row>
+
+                {tabMeetupsRender}
+              </TabPane>
+            );
+          })}
         </TabContent>
       </section>
     );

@@ -1,31 +1,19 @@
 import React from 'react';
-import {
-  Row,
-  Col,
-  Table,
-  Badge,
-} from 'reactstrap';
+import { Row, Col, Table, Badge } from 'reactstrap';
 
 import Widget from '../../../components/Widget';
 import s from './Static.module.scss';
 
 class Static extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className={s.root}>
-        <h2 className="page-title">Пользователи</h2>
+        <h2 className='page-title'>Пользователи</h2>
         <Row>
           <Col lg={12}>
-            <Widget
-              title={<h5>Все пользователи</h5>} settings close
-            >
-              <div className="table-responsive">
-                <Table className="table-hover">
+            <Widget title={<h5>Все пользователи</h5>} settings close>
+              <div className='table-responsive'>
+                <Table className='table-hover'>
                   <thead>
                     <tr>
                       <th>#</th>
@@ -43,32 +31,56 @@ class Static extends React.Component {
                       <td>Достоевский</td>
                       <td>Федор</td>
                       <td>Михайлович</td>
-                      <td><a href="#">sam@example.com</a></td>
-                      <td><Badge color="gray" className="text-secondary" pill>Приглашенный</Badge></td>
+                      <td>
+                        <a href='#'>sam@example.com</a>
+                      </td>
+                      <td>
+                        <Badge color='gray' className='text-secondary' pill>
+                          Приглашенный
+                        </Badge>
+                      </td>
                     </tr>
                     <tr>
                       <td>2</td>
                       <td>Раскольникв</td>
                       <td>Родион</td>
                       <td>Романович</td>
-                      <td><a href="#">fat.thor@example.com</a></td>
-                      <td><Badge color="gray" className="text-secondary" pill>Не подтвержденный</Badge></td>
+                      <td>
+                        <a href='#'>fat.thor@example.com</a>
+                      </td>
+                      <td>
+                        <Badge color='gray' className='text-secondary' pill>
+                          Не подтвержденный
+                        </Badge>
+                      </td>
                     </tr>
                     <tr>
                       <td>3</td>
                       <td>Мармеладова</td>
                       <td>Соня</td>
                       <td>Семеновна</td>
-                      <td><a href="#">larry@example.com</a></td>
-                      <td><Badge color="primary" className="text-secondary" pill>Новый</Badge></td>
+                      <td>
+                        <a href='#'>larry@example.com</a>
+                      </td>
+                      <td>
+                        <Badge color='primary' className='text-secondary' pill>
+                          Новый
+                        </Badge>
+                      </td>
                     </tr>
                     <tr>
                       <td>4</td>
                       <td>Раскольникова</td>
                       <td>Авдотья</td>
                       <td>Романовна</td>
-                      <td><a href="#">peter@example.com</a></td>
-                      <td><Badge color="success" className="text-secondary" pill>Активный</Badge></td>
+                      <td>
+                        <a href='#'>peter@example.com</a>
+                      </td>
+                      <td>
+                        <Badge color='success' className='text-secondary' pill>
+                          Активный
+                        </Badge>
+                      </td>
                     </tr>
                   </tbody>
                   {/* eslint-enable */}
@@ -80,7 +92,6 @@ class Static extends React.Component {
       </div>
     );
   }
-
 }
 
 export default Static;

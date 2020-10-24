@@ -4,7 +4,6 @@ import classnames from 'classnames';
 import NotificationsDemo from './notifications-demo/Notifications';
 import NewNotificationsDemo from './notifications-demo/NewNotifications';
 import MessagesDemo from './notifications-demo/Messages';
-import ProgressDemo from './notifications-demo/Progress';
 
 import s from './Notifications.module.scss';
 
