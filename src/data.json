@@ -108,76 +108,1674 @@
       "statusStudy": 5
     }
   ],
-  "events": [
-    {
-      "id": 1,
-      "type": "offline",
-      "title": "Мероприятие1",
-      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
-      "startDate": "2020-10-30T13:00",
-      "endDate": "2020-10-30T16:00",
-      "latitude": "46.034079",
-      "longitude": "51.541787"
+  "pages": {
+    "online": {
+      "tabs": [
+        {
+          "id": 1,
+          "name": "Деловые игры",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Аналитика",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Программирование",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Дизайн",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Финансы",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Мотивация",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Маркетинг",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "SMM",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        }
+      ]
     },
-    {
-      "id": 2,
-      "type": "online",
-      "title": "Мероприятие1",
-      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
-      "startDate": "2020-10-30T13:00",
-      "endDate": "2020-10-30T16:00",
-      "latitude": "46.034079",
-      "longitude": "51.541787"
+    "offline": {
+      "tabs": [
+        {
+          "id": 1,
+          "name": "Деловые игры",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Аналитика",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Программирование",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Дизайн",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Финансы",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Мотивация",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Маркетинг",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "SMM",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        }
+      ]
     },
-    {
-      "id": 3,
-      "type": "online",
-      "title": "Мероприятие1",
-      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
-      "startDate": "2020-10-30T13:00",
-      "endDate": "2020-10-30T16:00",
-      "latitude": "46.034079",
-      "longitude": "51.541787"
-    },
-    {
-      "id": 4,
-      "type": "online",
-      "title": "Мероприятие1",
-      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
-      "startDate": "2020-10-30T13:00",
-      "endDate": "2020-10-30T16:00",
-      "latitude": "46.034079",
-      "longitude": "51.541787"
-    },
-    {
-      "id": 5,
-      "type": "online",
-      "title": "Мероприятие1",
-      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
-      "startDate": "2020-10-30T13:00",
-      "endDate": "2020-10-30T16:00",
-      "latitude": "46.034079",
-      "longitude": "51.541787"
-    },
-    {
-      "id": 6,
-      "type": "online",
-      "title": "Мероприятие1",
-      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
-      "startDate": "2020-10-30T13:00",
-      "endDate": "2020-10-30T16:00",
-      "latitude": "46.034079",
-      "longitude": "51.541787"
-    },
-    {
-      "id": 7,
-      "type": "offline",
-      "title": "Мероприятие1",
-      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
-      "startDate": "2020-10-30T13:00",
-      "endDate": "2020-10-30T16:00",
-      "latitude": "46.034079",
-      "longitude": "51.541787"
+    "testing": {
+      "tabs": [
+        {
+          "id": 1,
+          "name": "Деловые игры",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Аналитика",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Программирование",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Дизайн",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Финансы",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Мотивация",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Маркетинг",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "SMM",
+          "meetups": [
+            {
+              "id": 1,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 2,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 3,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 4,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 5,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 6,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            },
+            {
+              "id": 7,
+              "title": "Мероприятие1",
+              "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+              "startDate": "2020-10-30T13:00",
+              "endDate": "2020-10-30T16:00",
+              "latitude": "46.034079",
+              "longitude": "51.541787"
+            }
+          ]
+        }
+      ]
     }
-  ]
+  }
 }
