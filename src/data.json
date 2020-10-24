@@ -1,123 +1,183 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "birthday": "1990-06-04",
-        "location": "г. Ростов-на-Дону",
-        "email": "123@mail.ru",        
-        "password": "123",
-        "genders": "male",
-        "events": 11,
-        "organization": "МГУ",
-        "link": {
-          "vk": "vk.com/123",
-          "instagram": "123.com"
-        },
-        "phone": "79995558866",
-        "telegram": "@2323123",
-        "surname": "Достоевский",
-        "name": "Федор",
-        "patronymic": "Михайлович",
-        "scores": 123,
-        "statusStudy": 1
+  "users": [
+    {
+      "id": 1,
+      "birthday": "1990-06-04",
+      "location": "г. Ростов-на-Дону",
+      "email": "123@mail.ru",
+      "password": "123",
+      "genders": "male",
+      "events": 11,
+      "organization": "МГУ",
+      "link": {
+        "vk": "vk.com/123",
+        "instagram": "123.com"
       },
-      {
-        "id": 2,
-        "birthday": "1996-02-09",
-        "location": "г. Екатеринбург",
-        "email": "ivanov_ivan@mail.ru",
-        "genders": "male",
-        "password": "123",
-        "events": 3,
-        "organization": "КГУ",
-        "link": {
-          "vk": "vk.com/ivanv",
-          "instagram": "instagram.com/ivanov.i"
-        },
-        "phone": "79995558866",
-        "telegram": "@ivnvn",
-        "surname": "Иванов",
-        "name": "Иван",
-        "patronymic": "Иванович",
-        "scores": 33,
-        "statusStudy": 2
+      "phone": "79995558866",
+      "telegram": "@2323123",
+      "surname": "Достоевский",
+      "name": "Федор",
+      "patronymic": "Михайлович",
+      "scores": 123,
+      "statusStudy": 1
+    },
+    {
+      "id": 2,
+      "birthday": "1996-02-09",
+      "location": "г. Екатеринбург",
+      "email": "ivanov_ivan@mail.ru",
+      "genders": "male",
+      "password": "123",
+      "events": 3,
+      "organization": "КГУ",
+      "link": {
+        "vk": "vk.com/ivanv",
+        "instagram": "instagram.com/ivanov.i"
       },
-      {
-        "id": 3,
-        "birthday": "2002-05-22",
-        "location": "г. Москва",
-        "email": "petrov@yandex.ru",
-        "password": "password",
-        "genders": "male",
-        "events": 11,
-        "organization": "РГУ",
-        "link": {
-          "vk": "vk.com/petr",
-          "instagram": "instagram.com/ptrv"
-        },
-        "phone": "79995558866",
-        "telegram": "@pert.a",
-        "surname": "Петров",
-        "name": "Сергей",
-        "patronymic": "Андреевич",
-        "scores": 123,
-        "statusStudy": 3
+      "phone": "79995558866",
+      "telegram": "@ivnvn",
+      "surname": "Иванов",
+      "name": "Иван",
+      "patronymic": "Иванович",
+      "scores": 33,
+      "statusStudy": 2
+    },
+    {
+      "id": 3,
+      "birthday": "2002-05-22",
+      "location": "г. Москва",
+      "email": "petrov@yandex.ru",
+      "password": "password",
+      "genders": "male",
+      "events": 11,
+      "organization": "РГУ",
+      "link": {
+        "vk": "vk.com/petr",
+        "instagram": "instagram.com/ptrv"
       },
-      {
-        "id": 4,
-        "birthday": "1998-01-29",
-        "location": "г. Волгоград",
-        "description": "Краткое описание ведущего",
-        "email": "nickt@google.com",
-        "password": "password",
-        "genders": "male",
-        "events": 222,
-        "organization": "СГУ",
-        "link": {
-          "vk": "vk.com/nick",
-          "instagram": "instagram.com/nicki"
-        },
-        "inviteLink": "elbrus.ru/nickit",
-        "phone": "71115558866",
-        "telegram": "@2323123",
-        "surname": "Никитин",
-        "name": "Руслан",
-        "patronymic": "Кириллович",
-        "scores": 1222,
-        "statusStudy": 4
+      "phone": "79995558866",
+      "telegram": "@pert.a",
+      "surname": "Петров",
+      "name": "Сергей",
+      "patronymic": "Андреевич",
+      "scores": 123,
+      "statusStudy": 3
+    },
+    {
+      "id": 4,
+      "birthday": "1998-01-29",
+      "location": "г. Волгоград",
+      "description": "Краткое описание ведущего",
+      "email": "nickt@google.com",
+      "password": "password",
+      "genders": "male",
+      "events": 222,
+      "organization": "СГУ",
+      "link": {
+        "vk": "vk.com/nick",
+        "instagram": "instagram.com/nicki"
       },
-      {
-        "id": 5,
-        "birthday": "1994-02-09",
-        "location": "г. Москва",
-        "email": "admin@elbrus.ru",        
-        "password": "password",
-        "genders": "male",
-        "events": 11,
-        "organization": "ПГУ",
-        "link": {
-          "vk": "vk.com/123",
-          "instagram": "123.com"
-        },
-        "phone": "79995558866",
-        "telegram": "@2323123",
-        "surname": "Достоевский",
-        "name": "Федор",
-        "patronymic": "Михайлович",
-        "scores": 123,
-        "statusStudy": 5
-      }
-    ],
-    "events": [
-      {
-        "id": 1,
-        "type": "offline",
-        "title": "Мероприятие1",
-        "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
-        "startDate": "2020-10-30T13:00",
-        "endDate": "2020-10-30T16:00",
-        "latitude": "46.034079",
-        "longitude": "51.541787"
-      }
-    ]
-  }
+      "inviteLink": "elbrus.ru/nickit",
+      "phone": "71115558866",
+      "telegram": "@2323123",
+      "surname": "Никитин",
+      "name": "Руслан",
+      "patronymic": "Кириллович",
+      "scores": 1222,
+      "statusStudy": 4
+    },
+    {
+      "id": 5,
+      "birthday": "1994-02-09",
+      "location": "г. Москва",
+      "email": "admin@elbrus.ru",
+      "password": "password",
+      "genders": "male",
+      "events": 11,
+      "organization": "ПГУ",
+      "link": {
+        "vk": "vk.com/123",
+        "instagram": "123.com"
+      },
+      "phone": "79995558866",
+      "telegram": "@2323123",
+      "surname": "Достоевский",
+      "name": "Федор",
+      "patronymic": "Михайлович",
+      "scores": 123,
+      "statusStudy": 5
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "type": "offline",
+      "title": "Мероприятие1",
+      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+      "startDate": "2020-10-30T13:00",
+      "endDate": "2020-10-30T16:00",
+      "latitude": "46.034079",
+      "longitude": "51.541787"
+    },
+    {
+      "id": 2,
+      "type": "online",
+      "title": "Мероприятие1",
+      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+      "startDate": "2020-10-30T13:00",
+      "endDate": "2020-10-30T16:00",
+      "latitude": "46.034079",
+      "longitude": "51.541787"
+    },
+    {
+      "id": 3,
+      "type": "online",
+      "title": "Мероприятие1",
+      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+      "startDate": "2020-10-30T13:00",
+      "endDate": "2020-10-30T16:00",
+      "latitude": "46.034079",
+      "longitude": "51.541787"
+    },
+    {
+      "id": 4,
+      "type": "online",
+      "title": "Мероприятие1",
+      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+      "startDate": "2020-10-30T13:00",
+      "endDate": "2020-10-30T16:00",
+      "latitude": "46.034079",
+      "longitude": "51.541787"
+    },
+    {
+      "id": 5,
+      "type": "online",
+      "title": "Мероприятие1",
+      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+      "startDate": "2020-10-30T13:00",
+      "endDate": "2020-10-30T16:00",
+      "latitude": "46.034079",
+      "longitude": "51.541787"
+    },
+    {
+      "id": 6,
+      "type": "online",
+      "title": "Мероприятие1",
+      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+      "startDate": "2020-10-30T13:00",
+      "endDate": "2020-10-30T16:00",
+      "latitude": "46.034079",
+      "longitude": "51.541787"
+    },
+    {
+      "id": 7,
+      "type": "offline",
+      "title": "Мероприятие1",
+      "link": "https://www.youtube.com/watch?v=zZBiln_2FhM",
+      "startDate": "2020-10-30T13:00",
+      "endDate": "2020-10-30T16:00",
+      "latitude": "46.034079",
+      "longitude": "51.541787"
+    }
+  ]
+}
