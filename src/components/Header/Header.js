@@ -147,7 +147,7 @@ class Header extends React.Component {
             </InputGroupAddon>
             <Input
               id='search-input-2'
-              placeholder='Search...'
+              placeholder='Поиск...'
               className='input-transparent'
               onFocus={() => this.setState({ searchFocused: true })}
               onBlur={() => this.setState({ searchFocused: false })}
@@ -165,7 +165,7 @@ class Header extends React.Component {
               <Input
                 id='search-input'
                 className='input-transparent'
-                placeholder='Search'
+                placeholder='Найти'
               />
             </InputGroup>
           </FormGroup>
@@ -186,7 +186,7 @@ class Header extends React.Component {
               >
                 <img src={avatar} alt='...' />
               </span>
-              <span className={`small ${s.accountCheck}`}>Philip smith</span>
+              <span className={`small ${s.accountCheck}`}>Андрей Андреев</span>
               <Badge className={s.badge} color='primary'>
                 13
               </Badge>
@@ -219,90 +219,36 @@ class Header extends React.Component {
               <DropdownItem>
                 <img className={s.image} src={sender1} alt='' />
                 <div className={s.details}>
-                  <div>Jane Hew</div>
-                  <div className={s.text}>Hey, John! How is it going? ...</div>
+                  <div>Тамара Васильева</div>
+                  <div className={s.text}>
+                    Привет, напоминаю, что сегодня ...
+                  </div>
                 </div>
               </DropdownItem>
               <DropdownItem>
                 <img className={s.image} src={sender2} alt='' />
                 <div className={s.details}>
-                  <div>Alies Rumiancaŭ</div>
-                  <div className={s.text}>
-                    I will definitely buy this template
-                  </div>
+                  <div>Владимир Смирнов</div>
+                  <div className={s.text}>Сегодня я занят</div>
                 </div>
               </DropdownItem>
               <DropdownItem>
                 <img className={s.image} src={sender3} alt='' />
                 <div className={s.details}>
-                  <div>Michał Rumiancaŭ</div>
-                  <div className={s.text}>
-                    Is it really Lore ipsum? Lore ...
-                  </div>
+                  <div>Михаил Михайлов</div>
+                  <div className={s.text}>Это так необходимо? А как же ...</div>
                 </div>
               </DropdownItem>
               <DropdownItem>
                 {/* eslint-disable-next-line */}
                 <a href='#' className='text-white'>
-                  See all messages <i className='fa fa-arrow-right' />
+                  Просмотреть все сообщения <i className='fa fa-arrow-right' />
                 </a>
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
           <NavItem className={`${s.divider} text-white`} />
-          <Dropdown
-            nav
-            isOpen={this.state.settingsOpen}
-            toggle={this.toggleSettingsDropdown}
-          >
-            <DropdownToggle nav className={`${s.navItem} text-white`}>
-              <i className='glyphicon glyphicon-cog' />
-            </DropdownToggle>
-            <DropdownMenu className={`${s.dropdownMenu} ${s.settings}`}>
-              <h6>Sidebar on the</h6>
-              <ButtonGroup size='sm'>
-                <Button
-                  color='primary'
-                  onClick={() => this.moveSidebar('left')}
-                  className={
-                    this.props.sidebarPosition === 'left' ? 'active' : ''
-                  }
-                >
-                  Left
-                </Button>
-                <Button
-                  color='primary'
-                  onClick={() => this.moveSidebar('right')}
-                  className={
-                    this.props.sidebarPosition === 'right' ? 'active' : ''
-                  }
-                >
-                  Right
-                </Button>
-              </ButtonGroup>
-              <h6 className='mt-2'>Sidebar</h6>
-              <ButtonGroup size='sm'>
-                <Button
-                  color='primary'
-                  onClick={() => this.toggleVisibilitySidebar('show')}
-                  className={
-                    this.props.sidebarVisibility === 'show' ? 'active' : ''
-                  }
-                >
-                  Show
-                </Button>
-                <Button
-                  color='primary'
-                  onClick={() => this.toggleVisibilitySidebar('hide')}
-                  className={
-                    this.props.sidebarVisibility === 'hide' ? 'active' : ''
-                  }
-                >
-                  Hide
-                </Button>
-              </ButtonGroup>
-            </DropdownMenu>
-          </Dropdown>
+
           <Dropdown
             nav
             isOpen={this.state.supportOpen}

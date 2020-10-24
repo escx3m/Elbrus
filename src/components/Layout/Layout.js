@@ -6,11 +6,12 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Hammer from 'rc-hammerjs';
 
 import OnlineEvent from '../../pages/components/online';
-import UINotifications from '../../pages/notifications';
+import UIElbrus from '../../pages/elbrus';
 import TablesStatic from '../../pages/tables/static';
 import OfflineEvent from '../../pages/components/offline/offline';
 import Testing from '../../pages/components/testing';
 import CoreWebinar from '../../pages/webinar';
+import CoreInfo from '../../pages/info';
 import Charts from '../../pages/components/charts/Charts';
 import Dashboard from '../../pages/dashboard';
 
@@ -81,12 +82,13 @@ class Layout extends React.Component {
                     <Route path="/app/main" exact render={() => <Redirect to="/app/main/dashboard" />} />
                     <Route path="/app/main/dashboard" exact component={Dashboard} />
                     <Route path="/app/online" exact component={OnlineEvent} />
-                    <Route path="/app/notifications" exact component={UINotifications} />
+                    <Route path="/app/elbrus" exact component={UIElbrus} />
                     <Route path="/app/charts" exact component={Charts} />
                     <Route path="/app/tables" exact component={TablesStatic} />
                     <Route path="/app/offline" exact component={OfflineEvent} />
                     <Route path="/app/testing" exact component={Testing} />
                     <Route path="/app/webinar" exact component={CoreWebinar} />
+                    <Route path="/app/info" exact component={CoreInfo} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
